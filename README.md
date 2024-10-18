@@ -1,35 +1,62 @@
-### 1. 簡介
+### 說明
+
+！此CFG會覆蓋原有設置，使用之前請先備份原先CFG以防意外！
 
 本項目提供了一系列的 CS2 配置文件 (CFG)。
 
 ---
 
-### 2. 安裝與使用
+### 安裝與使用
 
-#### 步驟1: 下載 CFG 文件
-
-將你所需要的 CFG 文件下載至本地。
+將CS2Konc-CFG資料夾整個拖到CFG資料夾，預設的相對路徑為
+```
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+```
 
 ---
 
-#### 步驟2: 複製到遊戲目錄
+### 自動安裝
 
-將下載的 CFG 文件複製到 CS2 的配置文件目錄中。預設的相對路徑為：
+將CS2Konc-CFG資料夾整個拖到CFG資料夾裡並按
 ```
-Counter-Strike Global Offensive\game\csgo\cfg
+【InstallCS2Konc-CFG.bat】雙擊自動安裝
+```
+---
+
+### 手動安裝
+
+方式1
+
+在Steam啟動項中添加
+```
++exec CS2Konc-CFG/CSKoncMod
+```
+---
+
+方式2
+
+創一個叫 autoexec.cfg 的檔案
+
+創在 Counter-Strike Global Offensive\game\csgo\cfg 裡。
+
+裡面寫
+```
+exec CS2Konc-CFG/CSKoncMod
+```
+推薦用autoexec.cfg方式
+
+---
+
+### 文字安裝
+
+將【resource】資料夾裡面的檔案都拖到【CS2的resource】資料夾裡
+
+【示例路徑】
+```
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】
 ```
 
-#### 步驟3: 加載配置文件
-```
-在Steam啟動項中添加 +exec CS2Konc-CFG/CSKoncMod
-```
-或
-```
-autoexec 寫上 exec CS2Konc-CFG/CSKoncMod
-```
-```
-推薦用autoexec
-```
+---
 
 ### 3. 相關設定
 
@@ -40,5 +67,7 @@ autoexec 寫上 exec CS2Konc-CFG/CSKoncMod
 ### 4. 免責聲明
 
 本CFG全是合法指令。本項目不對因使用本 CFG 文件所引發的任何問題負責。
+
+不存在被CFG封禁，官方自帶的功能
 
 ---
