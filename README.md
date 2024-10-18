@@ -7,9 +7,13 @@
 ### 2. 安裝與使用
 
 #### 步驟1: 下載 CFG 文件
+
 將你所需要的 CFG 文件下載至本地。
 
+---
+
 #### 步驟2: 複製到遊戲目錄
+
 將下載的 CFG 文件複製到 CS2 的配置文件目錄中。預設的相對路徑為：
 ```
 Counter-Strike Global Offensive\game\csgo\cfg
@@ -17,10 +21,17 @@ Counter-Strike Global Offensive\game\csgo\cfg
 
 #### 步驟3: 加載配置文件
 ```
-在Steam啟動項中添加 +exec CS2Konc-CFG/CSKoncMod 或在 autoexec 寫上 exec CS2Konc-CFG/CSKoncMod 推薦用autoexec
+在Steam啟動項中添加 +exec CS2Konc-CFG/CSKoncMod
+```
+或
+```
+autoexec 寫上 exec CS2Konc-CFG/CSKoncMod
+```
+```
+推薦用autoexec
 ```
 
-### 3. 常見問題
+### 3. 相關設定
 
 在【config\Preference.cfg跟PersonalSettings.cfg】根據文檔進行修改
 
