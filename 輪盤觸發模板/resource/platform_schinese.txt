@@ -1,0 +1,13 @@
+"Tokens"
+{
+	"Back_Page"                       "上一页"
+	"Next_Page"                       "下一页"
+	"Previous_level"                  "回到上一层"
+	"Reached_the_first_page"          "已到第一页"
+	"Reached_the_last_page"           "已到最后一页"
+	"idle"                       ""
+
+	"Front_Page"                      "首页"
+	"ReloadedCFG"                     "重新加载配置"
+	"Function"                        "功能"
+}

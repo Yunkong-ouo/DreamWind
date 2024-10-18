@@ -1,0 +1,13 @@
+"Tokens"
+{
+    "Back_Page"                       "Previous Page"
+    "Next_Page"                       "Next Page"
+    "Previous_level"                  "Return to previous level"
+    "Reached_the_first_page"          "Reached the first page"
+    "Reached_the_last_page"           "Reached the last page"
+    "idle"                       ""
+
+    "Front_Page"                      "Home Page"
+    "ReloadedCFG"                     "Configuration reloaded"
+    "Function"                        "Function"
+}

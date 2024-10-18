@@ -1,0 +1,10 @@
+"settings"
+{
+	TOP_SLOT GRENADES
+	ROTATION_OFFSET 180
+	FLASHBANG 2.5 //閃光彈
+	SMOKEGRENADE 2.5 //煙霧彈
+	HEGRENADE 2.5 //高爆手榴彈
+	MOLOTOV 2.5 //燃燒彈
+    DECOYGRENADE 2.5 //誘餌彈
+}

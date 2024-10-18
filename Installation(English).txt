@@ -1,0 +1,38 @@
+Here’s the English translation of your text:
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+!This CFG will overwrite the existing settings; please back up the original CFG before use to prevent any accidents!
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+【Automatic Installation】
+1. Drag the entire CS2Konc-CFG folder into the CFG folder and double-click 【InstallCS2Konc-CFG.bat】 to install automatically.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2. Settings
+Modify the 【config\settings.cfg and personalsettings.cfg】 according to the documentation.
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+【Manual Installation】
+1. Launch Options
+Drag the entire CS2Konc-CFG folder into the CFG folder, and add +exec CS2Konc-CFG/CSKoncMod to the Steam launch options, or write exec CS2Konc-CFG/CSKoncMod in autoexec. It is recommended to use autoexec.
+【Example Path】【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2. Settings
+Modify the 【config\settings.cfg and personalsettings.cfg】 according to the documentation.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+3. Text Installation
+Drag all files in the 【resource】 folder to the 【CS2 resource】 folder.
+【Example Path】【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+【Usage】
+1. Hold 【Right Shift】 to open the wheel, drag the mouse to select the function, and release 【Right Shift】 to choose.
+The scroll wheel can be used to scroll up and down.
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
