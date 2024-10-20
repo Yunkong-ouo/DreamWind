@@ -37,6 +37,11 @@
     "SpaceDuckJumpON"               "開啟空格大跳 \n \n \n \n"
     "SpaceDuckJumpOFF"              "關閉空格大跳 \n \n \n \n"
 
+    "AutoStopSingle"                "單鍵急停 \n \n \n \n"
+    "AutoStopDouble"                "雙鍵急停 \n \n \n \n"
+    "AutoStopSnaptap"               "Snaptap急停 \n \n \n \n"
+    "AutoStopOFF"                   "關閉急停 \n \n \n \n"
+
     "RouletteCuttingToolON"         "開啟輪盤切道具 \n \n \n \n"
     "RouletteCuttingToolOFF"        "關閉輪盤切道具 \n \n \n \n"
 
