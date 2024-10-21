@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "運行 InstallCS2Konc-CFG.bat",
+      "type": "shell",
+      "command": "./InstallCS2Konc-CFG.bat",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
