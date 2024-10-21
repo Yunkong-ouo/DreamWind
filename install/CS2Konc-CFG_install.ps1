@@ -59,6 +59,17 @@ $destinationFolder2 = "..\..\resource"
 # 檢查目標資料夾是否存在，若不存在則創建
 if (-not (Test-Path $destinationFolder2)) {
     New-Item -Path $destinationFolder2 -ItemType Directory
+} else {
+    # 刪除檔案，保留名為 game-icon.bmp 的檔案
+    Get-ChildItem -Path $destinationFolder2 -Recurse | ForEach-Object {
+        if ($_.Name -ne "game-icon.bmp") {
+            try {
+                Remove-Item -Path $_.FullName -Recurse -Force -ErrorAction Stop
+            } catch {
+                Write-Host "無法刪除項目：$($_.FullName) - $_"
+            }
+        }
+    }
 }
 
 # 解壓縮文件
@@ -66,6 +77,7 @@ Expand-Archive -Path $zipFilePath2 -DestinationPath $destinationFolder2 -Force
 
 # 輸出安裝完成消息
 Write-Verbose "安裝完成"
+
 
 # 創建 autoexec.cfg 並在第一行寫入內容
 $autoexecPath = Join-Path -Path $currentDirectory -ChildPath "..\autoexec.cfg"
