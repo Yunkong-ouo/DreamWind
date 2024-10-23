@@ -7,7 +7,7 @@
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 【自動安裝】
-1. 將CS2Konc-CFG資料夾整個拖到CFG資料夾裡並按【InstallCS2Konc-CFG.bat】雙擊自動安裝
+1. 將CS2Konc_CFG資料夾整個拖到CFG資料夾裡並按【InstallCS2Konc_CFG.bat】雙擊自動安裝
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 2.設定
 在【config\settings.cfg跟personalsettings.cfg】根據文檔進行修改
@@ -16,7 +16,7 @@
 
 【手動安裝】
 1.啟動項 
-將CS2Konc-CFG資料夾整個拖到CFG資料夾裡，在Steam啟動項中添加 +exec CS2Konc-CFG/CSKoncMod 或在 autoexec 寫上 exec CS2Konc-CFG/CSKoncMod 推薦用autoexec
+將CS2Konc_CFG資料夾整個拖到CFG資料夾裡，在Steam啟動項中添加 +exec CS2Konc_CFG/CSKoncMod 或在 autoexec 寫上 exec CS2Konc_CFG/CSKoncMod 推薦用autoexec
 【示例路徑】【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 2.設定

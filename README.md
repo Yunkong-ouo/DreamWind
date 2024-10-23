@@ -8,7 +8,7 @@
 
 ### 安裝與使用
 
-將CS2Konc-CFG資料夾整個拖到CFG資料夾，預設的相對路徑為
+將CS2Konc_CFG資料夾整個拖到CFG資料夾，預設的相對路徑為
 ```
 【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
 ```
@@ -17,9 +17,9 @@
 
 ### 自動安裝
 
-將CS2Konc-CFG資料夾整個拖到CFG資料夾裡並按
+將CS2Konc_CFG資料夾整個拖到CFG資料夾裡並按
 ```
-【InstallCS2Konc-CFG.bat】雙擊自動安裝
+【InstallCS2Konc_CFG.bat】雙擊自動安裝
 ```
 ---
 
@@ -29,7 +29,7 @@
 
 在Steam啟動項中添加
 ```
-+exec CS2Konc-CFG/CSKoncMod
++exec CS2Konc_CFG/CSKoncMod
 ```
 ---
 
@@ -41,7 +41,7 @@
 
 裡面寫
 ```
-exec CS2Konc-CFG/CSKoncMod
+exec CS2Konc_CFG/CSKoncMod
 ```
 推薦用autoexec.cfg方式
 

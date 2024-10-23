@@ -24,15 +24,15 @@ exit /B
 cd /d "%~dp0"
 
 :awa
-REM 檢查是否在 CS2Konc-CFG 資料夾中
+REM 檢查是否在 CS2Konc_CFG 資料夾中
 for %%I in (.) do set CurrDirName=%%~nxI
-if /I not "%CurrDirName%"=="CS2Konc-CFG" (
+if /I not "%CurrDirName%"=="CS2Konc_CFG" (
     cls
     color 0C
-    echo 請把此檔案放進 CS2Konc-CFG 資料夾中!!!
-    echo 請把此檔案放進 CS2Konc-CFG 資料夾中!!!
-    echo 請把此檔案放進 CS2Konc-CFG 資料夾中!!!
-    echo 請確保此檔案在 *\Counter-Strike Global Offensive\game\csgo\cfg\CS2Konc-CFG 目錄當中
+    echo 請把此檔案放進 CS2Konc_CFG 資料夾中!!!
+    echo 請把此檔案放進 CS2Konc_CFG 資料夾中!!!
+    echo 請把此檔案放進 CS2Konc_CFG 資料夾中!!!
+    echo 請確保此檔案在 *\Counter-Strike Global Offensive\game\csgo\cfg\CS2Konc_CFG 目錄當中
     echo.
     echo.請按任意鍵退出。
     pause >nul
@@ -92,7 +92,7 @@ if "%ERRORLEVEL%"=="1" (
     )
     color 0A
     REM 運行 PowerShell 腳本並在完成後退出
-    call powershell.exe -ExecutionPolicy Bypass -File ".\install\CS2Konc-CFG_install_Resource.ps1"
+    call powershell.exe -ExecutionPolicy Bypass -File ".\install\CS2Konc_CFG_install_Resource.ps1"
     REM echo.請按任意鍵退出。
     REM pause >nul
     exit /b
@@ -101,6 +101,6 @@ if "%ERRORLEVEL%"=="1" (
 cls
 color 0A
 REM 執行默認的 PowerShell 腳本
-call powershell.exe -ExecutionPolicy Bypass -File ".\install\CS2Konc-CFG_install_Resource_Perfect.ps1"
+call powershell.exe -ExecutionPolicy Bypass -File ".\install\CS2Konc_CFG_install_Resource_Perfect.ps1"
 REM echo.請按任意鍵退出。
 REM pause >nul

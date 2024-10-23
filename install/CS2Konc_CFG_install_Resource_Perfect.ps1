@@ -90,7 +90,7 @@ else {
 Expand-Archive -Path $zipFilePath2 -DestinationPath $destinationFolder2 -Force
 
 # 創建Autoexec
-& ".\install\CS2Konc-CFG_Autoexec.ps1"
+& ".\install\CS2Konc_CFG_Autoexec.ps1"
 
 # 輸出安裝完成消息
 Write-Verbose "安裝完成"
