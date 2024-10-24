@@ -30,7 +30,6 @@
     "CrosshairRecoilDisplayON"      "開啟準星顯示後座力 \n \n \n \n"  
     "CrosshairRecoilDisplayOFF"     "關閉準星顯示後座力 \n \n \n \n"
 
-    "JumpThrowSettings"             "跳投設置 \n \n \n \n"
     "WKeyThrow"                     "W鍵丟擲 \n \n \n \n"
     "DKeyThrow"                     "D鍵丟擲 \n \n \n \n"
     "AKeyThrow"                     "A鍵丟擲 \n \n \n \n"
@@ -46,6 +45,12 @@
 
     "RouletteCuttingToolON"         "開啟輪盤切道具 \n \n \n \n"
     "RouletteCuttingToolOFF"        "關閉輪盤切道具 \n \n \n \n"
+
+    "ShootCancelUnpackingON"        "開啟開槍取消拆包"
+    "ShootCancelUnpackingOFF"       "關閉開槍取消拆包"
+
+    "AutoSwitchWeaponON"            "開啟狙擊槍快速切槍"
+    "AutoSwitchWeaponOFF"           "關閉狙擊槍快速切槍"
 
     "TextOutputSettings"            "文字輸出設置 \n \n \n \n"
     "NoTextOutput"                  "關閉文字輸出 \n \n \n \n"
