@@ -1,3 +1,7 @@
 resource.zip
 InstallCS2Konc_CFG2.bat
 .vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
