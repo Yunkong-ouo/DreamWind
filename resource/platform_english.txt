@@ -5,7 +5,7 @@
     "PreviousLevel"                 "Previous Level \n \n \n \n"
     "AtFirstPage"                   "At First Page \n \n \n \n"
     "AtLastPage"                    "At Last Page \n \n \n \n"
-    "Idle"                          ""
+    "NoneFunction"                          ""
 
     "FrontPage"                     "FrontPage \n \n \n \n"
     "ReloadConfiguration"           "Reload Configuration \n \n \n \n"

@@ -10,7 +10,7 @@
     "PreviousLevel"                 "回到上一層 \n \n \n \n"
     "AtFirstPage"                   "已到第一頁 \n \n \n \n"
     "AtLastPage"                    "已到最後一頁 \n \n \n \n"
-    "Idle"                          ""
+    "NoneFunction"                          ""
 
     "FrontPage"                     "首頁 \n \n \n \n"
     "ReloadConfiguration"           "重新加載配置 \n \n \n \n"
@@ -46,11 +46,11 @@
     "RouletteCuttingToolON"         "開啟輪盤切道具 \n \n \n \n"
     "RouletteCuttingToolOFF"        "關閉輪盤切道具 \n \n \n \n"
 
-    "ShootCancelUnpackingON"        "開啟開槍取消拆包"
-    "ShootCancelUnpackingOFF"       "關閉開槍取消拆包"
+    "ShootCancelUnpackingON"        "開啟開槍取消拆包 \n \n \n \n"
+    "ShootCancelUnpackingOFF"       "關閉開槍取消拆包 \n \n \n \n"
 
-    "AutoSwitchWeaponON"            "開啟狙擊槍快速切槍"
-    "AutoSwitchWeaponOFF"           "關閉狙擊槍快速切槍"
+    "AutoSwitchWeaponON"            "開啟狙擊槍快速切槍 \n \n \n \n"
+    "AutoSwitchWeaponOFF"           "關閉狙擊槍快速切槍 \n \n \n \n"
 
     "TextOutputSettings"            "文字輸出設置 \n \n \n \n"
     "NoTextOutput"                  "關閉文字輸出 \n \n \n \n"

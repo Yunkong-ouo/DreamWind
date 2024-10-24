@@ -5,7 +5,7 @@
     "PreviousLevel"                 "回到上一层 \n \n \n \n"
     "AtFirstPage"                   "已到第一页 \n \n \n \n"
     "AtLastPage"                    "已到最后一页 \n \n \n \n"
-    "Idle"                          ""
+    "NoneFunction"                          ""
 
     "FrontPage"                     "首页 \n \n \n \n"
     "ReloadConfiguration"           "重新加载CFG \n \n \n \n"
