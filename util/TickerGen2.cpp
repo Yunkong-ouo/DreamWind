@@ -158,58 +158,6 @@ void generateFile(const string &filename, const string &tickerContentName, int s
 	}
 }
 
-// 生成 Loading.cfg
-void generateLoadingFile(const string &loadingFile, const string &tickerContentName, int fileCount, const string &utilPath, const string &folderName, const string &tickerName)
-{
-	freopen(loadingFile.c_str(), "w", stdout);
-	cout << "alias " << tickerContentName << "clear \"";
-	foru(i, 1, fileCount)
-	{
-		cout << "alias " << tickerContentName << i << " \"\";" << (i < fileCount ? " " : "");
-	}
-	cout << "\"\nalias tmpts \"echoln New Beginning " << tickerContentName << "\"\n";
-	foru(i, 1, fileCount)
-	{
-		cout << "alias " << tickerContentName << i << "_begin \"" << tickerContentName << "clear; alias " << tickerContentName << i << " " << tickerContentName << "; tmpts\"\n";
-	}
-	cout << "\nexec_async " << utilPath << "/" << folderName << "/" << tickerName << "Setup\n";
-	fflush(stdout);
-	freopen("CON", "w", stdout); // 将输出重定向回控制台
-}
-
-// 生成 Defines.cfg 文件
-void generateDefinesFile(const string &definesFile, const string &tickerContentName)
-{
-	freopen(definesFile.c_str(), "w", stdout);
-	cout << "alias " << tickerContentName << " \"\"\n";
-	fflush(stdout);
-	freopen("CON", "w", stdout);
-}
-
-// 生成 Manager.cfg 文件
-void generateManagerFile(const string &managerFile, const string &utilPath, const string &folderName, const string &tickerName)
-{
-	freopen(managerFile.c_str(), "w", stdout);
-	cout << "exec " << utilPath << "/" << folderName << "/" << tickerName << "Defines\n";
-	cout << "sv_cheats 1\nDontExecuteThisAgain\n";
-	cout << "exec_async " << utilPath << "/" << folderName << "/" << tickerName << "Loading\n";
-	cout << "sv_cheats 1\n";
-	fflush(stdout);
-	freopen("CON", "w", stdout);
-}
-
-// 生成 Setup.cfg 文件
-void generateSetupFile(const string &setupFile, int fileCount, const string &utilPath, const string &folderName, const string &tickerName)
-{
-	freopen(setupFile.c_str(), "w", stdout);
-	foru(i, 1, fileCount)
-	{
-		cout << "exec_async " << utilPath << "/" << folderName << "/" << tickerName << i << "\n";
-	}
-	fflush(stdout);
-	freopen("CON", "w", stdout);
-}
-
 int main()
 {
 	setConsoleCodePage();
@@ -240,11 +188,8 @@ int main()
 		cin >> tickerContentName;
 	}
 
-	// 提示用戶輸入資料夾名稱
 	cout << "請輸入資料夾名稱（僅限英文和數字）：";
 	cin >> folderName;
-
-	// 確保資料夾名稱符合要求
 	while (!isAlphanumeric(folderName))
 	{
 		cout << "無效的資料夾名稱，請重新輸入（僅限英文和數字）：";
@@ -256,26 +201,15 @@ int main()
 	{
 		cout << "資料夾已存在或創建失敗，將使用已存在的資料夾。" << endl;
 	}
-	else
-	{
-		cout << "資料夾創建成功！" << endl;
-	}
 
 	// 提示用戶輸入路徑
-	cout << "你的CFG資料夾/生成器位置，像這樣yyy/xxx\n請輸入路徑：";
-
-	// 清除输入缓冲区
-	cin.ignore(numeric_limits<streamsize>::max(), '\n'); // 清除缓冲区的残留输入
+	cout << "你的CFG資料夾/生成器位置：CS2Konc_CFG/util\n請輸入路徑：";
 	cin >> utilPath;
-
-	// 确保路径不为空
 	while (utilPath.empty())
 	{
 		cout << "路徑不能为空，請重新輸入：";
-		cin.ignore(numeric_limits<streamsize>::max(), '\n'); // 清除缓冲区
 		cin >> utilPath;
 	}
-
 	convertBackslashesToSlashes(utilPath);
 
 	vector<int> sleepOptions1 = {600000, 700000, 800000};
@@ -298,41 +232,54 @@ int main()
 		}
 	}
 
-	// 生成文件
 	foru(i, 1, fileCount)
 	{
-		string filename = folderName + "/" + tickerName + to_string(i) + ".cfg";
-		generateFile(filename, tickerContentName, sleepTime1, sleepTime2, i, outputDone);
+		generateFile(folderName + "/" + tickerName + to_string(i) + ".cfg", tickerContentName, sleepTime1, sleepTime2, i, outputDone);
 	}
 
 	// 生成 Manager.cfg
 	{
 		string managerFile = folderName + "/" + tickerName + "Manager.cfg";
-		generateManagerFile(managerFile, utilPath, folderName, tickerName);
+		freopen(managerFile.c_str(), "w", stdout);
+		cout << "exec " << utilPath << "/" << folderName << "/" << tickerName << "Defines\n";
+		cout << "sv_cheats 1\nDontExecuteThisAgain\n";
+		cout << "exec_async " << utilPath << "/" << folderName << "/" << tickerName << "Loading\n";
+		cout << "sv_cheats 1\n";
 	}
 
 	// 生成 Defines.cfg
 	{
 		string definesFile = folderName + "/" + tickerName + "Defines.cfg";
-		generateDefinesFile(definesFile, tickerContentName);
+		freopen(definesFile.c_str(), "w", stdout);
+		cout << "alias " << tickerContentName << " \"\"\n";
 	}
 
 	// 生成 Setup.cfg
 	{
 		string setupFile = folderName + "/" + tickerName + "Setup.cfg";
-		generateSetupFile(setupFile, fileCount, utilPath, folderName, tickerName);
+		freopen(setupFile.c_str(), "w", stdout);
+		foru(i, 1, fileCount)
+		{
+			cout << "exec_async " << utilPath << "/" << folderName << "/" << tickerName << i << "\n";
+		}
 	}
 
 	// 生成 Loading.cfg
 	{
 		string loadingFile = folderName + "/" + tickerName + "Loading.cfg";
-		generateLoadingFile(loadingFile, tickerContentName, fileCount, utilPath, folderName, tickerName);
+		freopen(loadingFile.c_str(), "w", stdout);
+		cout << "alias " << tickerContentName << "clear \"";
+		foru(i, 1, fileCount)
+		{
+			cout << "alias " << tickerContentName << i << " \"\";" << (i < fileCount ? " " : "");
+		}
+		cout << "\"\nalias tmpts \"echoln New Beginning " << tickerContentName << "\"\n";
+		foru(i, 1, fileCount)
+		{
+			cout << "alias " << tickerContentName << i << "_begin \"" << tickerContentName << "clear; alias " << tickerContentName << i << " " << tickerContentName << "; tmpts\"\n";
+		}
+		cout << "\nexec_async " << utilPath << "/" << folderName << "/" << tickerName << "Setup\n";
 	}
-
-	cout << "所有文件已成功生成！" << endl;
-	cout << "按任繼續..." << endl;
-	cin.ignore();
-	cin.get();
 
 	return 0;
 }
