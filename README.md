@@ -32,7 +32,7 @@ CS2Konc-CFG 主要是為而輕量設計的，同時全功能都能在 sv_cheats 
 ！此CFG會覆蓋原有設置，使用之前請先備份原先CFG以防意外！
 
 ## 🚀安裝說明
-<h3>下載並解壓縮文件將CS2Konc_CFG資料夾整個拖到CFG資料夾，預設的相對路徑為<h3>
+下載並解壓縮文件將CS2Konc_CFG資料夾整個拖到CFG資料夾，預設的相對路徑為
 
 ```
 【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
