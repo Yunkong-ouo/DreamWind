@@ -1,4 +1,7 @@
-![image](https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/ditou.jpg)
+<div align="center">
+    <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/ditou.jpg" alt="image">
+</div>
+
 <h1 align="center">CS2Konc-CFG</h1>
 
 ## 💼CS2Konc-CFG介紹
