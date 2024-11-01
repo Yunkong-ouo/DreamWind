@@ -13,7 +13,9 @@
 ## 💼 Introduction to CS2Konc-CFG
 **CS2Konc-CFG** is a lightweight CS2 CFG project that integrates some common features while providing powerful customization options. Using an in-game wheel menu, 🚀 players can visually access the features of **CS2Konc-CFG** during gameplay.
 
-**CS2Konc-CFG** is primarily designed for lightweight performance, with all features operable under `sv_cheats 0`, and includes a practice mode that runs under `sv_cheats 1`, allowing players to quickly familiarize themselves with maps and items, also accessible in a visual manner. In most cases, using **CS2Konc-CFG** will not result in a **VAC** ban. This is merely a CFG project. Officially provided features 👍
+**CS2Konc-CFG** is primarily designed for lightweight performance, with all features operable under `sv_cheats 0`, and includes a practice mode that runs under `sv_cheats 1`, allowing players to quickly familiarize themselves with maps and items, also accessible in a visual manner. 
+
+In most cases, using **CS2Konc-CFG** will not result in a **VAC** ban. This is merely a CFG project. Officially provided features 👍
 
 ## ✨ Features
 - 🔥 Quick configuration
