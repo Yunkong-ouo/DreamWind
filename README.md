@@ -1,4 +1,3 @@
-```markdown
 <div align="right">
 
 **繁體中文** | [简体中文](./README.zh-CN.md) | [English](./README.en.md)
