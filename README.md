@@ -1,3 +1,4 @@
+![image](https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/ditou.jpg)
 <h1 align="center">CS2Konc-CFG</h1>
 
 ## 💼CS2Konc-CFG介紹
@@ -33,23 +34,30 @@
 
 ## 🚀安裝說明
 下載並解壓縮文件將CS2Konc_CFG資料夾整個拖到CFG資料夾，預設的相對路徑為
-
 ```
 【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
 ```
+
 ---
+
 文字安裝<br>
 將resource文件夾內的檔案(.txt)都拖到CS2的resource文件夾內，預設的相對路徑為
 ```
 【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】
 ```
-載入方式
+
+---
+
+<h1>載入方式</h1>
 方式1
+
 在Steam啟動項中添加
 ```
 +exec CS2Konc_CFG/CSKoncMod
 ```
+
 ---
+
 方式2
 創一個叫 autoexec.cfg 的檔案
 創在 Counter-Strike Global Offensive\game\csgo\cfg 裡。
@@ -57,9 +65,10 @@
 ```
 exec CS2Konc_CFG/CSKoncMod
 ```
-推薦用autoexec.cfg方式
+<h3>推薦用autoexec.cfg方式</h3>
 
 ---
+
 <h1>🖥️自動安裝</h1>
 【InstallCS2Konc_CFG.bat】雙擊自動安裝
 
