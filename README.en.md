@@ -5,85 +5,82 @@
 </div>
 
 <div align="center">
-    <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/ditou.jpg" alt="image">
+    <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/ditou.jpg" alt="image" width="600">
 </div>
 
 <h1 align="center">CS2Konc-CFG</h1>
 
 ## 💼 Introduction to CS2Konc-CFG
-**CS2Konc-CFG** is a lightweight CS2 CFG project that integrates some common features while providing powerful customization options. 
-Using the in-game radial menu, 🚀 players can visually access the features of **CS2Konc-CFG** within the game. 
-**CS2Konc-CFG** is designed primarily for lightweight use, with all functions operational under sv_cheats 0, and also includes practice mode under sv_cheats 1, allowing players to quickly familiarize themselves with maps and items, also with visual access. In most cases, using **CS2Konc-CFG** will not lead to a **VAC** ban. This is simply a CFG project with features provided by the official source. 👍
+**CS2Konc-CFG** is a lightweight CS2 CFG project that integrates some common features while providing powerful customization options. Using an in-game wheel menu, 🚀 players can visually access the features of **CS2Konc-CFG** during gameplay.
+
+**CS2Konc-CFG** is primarily designed for lightweight performance, with all features operable under `sv_cheats 0`, and includes a practice mode that runs under `sv_cheats 1`, allowing players to quickly familiarize themselves with maps and items, also accessible in a visual manner. In most cases, using **CS2Konc-CFG** will not result in a **VAC** ban. This is merely a CFG project. Officially provided features 👍
 
 ## ✨ Features
 - 🔥 Quick configuration
 - 💤 Simple interface
-- 📦 Pre-installed plugins
+- 📦 Preloaded plugins
 - 🧹 Elegant design
 - 🚀 Lightning fast
 
-## 📝 Feature Introduction
-Name                     | Description
------------------------ | ---------
-Automatic stop            | Quickly reduce speed with WASD
-Jump throw bind           | Automatically throw grenades in the direction of WASD or throw without direction
-Space large jump          | Automatically perform a large jump when pressing the space key
-Radial item switch        | Save key presses; just hold the bound key to bring up the radial menu, and clicking can also switch items
-Quick switch for sniper rifle | Quickly switch weapons by pressing Q
-Automatic text clearing    | Auto-clear chat text, type faster than others
-Custom text output         | Output to close/console/team/all/switching CFG
-Crosshair utility         | Functions related to crosshair following
-Scroll wheel utility      | Conveniently set scroll wheel-related settings and also customize them
-Practice mode             | One-click setup for practice mode, also customizable features
-Reset CFG flash reminder   | A color change will remind you when you reset the CFG
+## 📝 Feature Description
+| Name                      | Description                               |
+|------------------------- |------------------------------------------|
+| Auto Stop                | Quickly decrease speed using WASD        |
+| Jump Throw Binding       | Automatically throw with WASD direction or without direction |
+| Space Big Jump           | Automatically perform a big jump when pressing the space key |
+| Wheel Item Switching      | Saves key presses; just hold the bound key to bring up the wheel, and tapping can also switch items |
+| Quick Sniper Switching    | Quickly switch weapons by pressing Q     |
+| Auto Frequency Wash       | Internal key wash frequency text, type faster than others |
+| Custom Text Output        | Output in close/control/team/all/switch CFG |
+| Crosshair Utility Functions| Functions related to crosshair tracking   |
+| Scroll Wheel Utility Functions| Convenient settings for scroll wheel settings, can also customize scroll wheel settings |
+| Practice Mode             | One-click setting for practice mode, can also customize related functions |
+| Reset CFG Flash Reminder   | Changing interface color when you reset CFG, reminding you of the CFG reset |
 
 ## 🔥 Special Note
-! This CFG will overwrite existing settings, please back up the original CFG before use to prevent accidents!
+**! This CFG will overwrite existing settings, please back up the original CFG before use to avoid accidents!**
 
 ## 🚀 Installation Instructions
-Download and unzip the file, dragging the entire CS2Konc_CFG folder into the CFG folder, with the default relative path being
+Download and unzip the file, drag the entire `CS2Konc_CFG` folder into the CFG folder. The default relative path is:
 ```
 *Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
 
 ---
 
-Text Installation
-Drag all files (.txt) from the resource folder into the resource folder of CS2, with the default relative path being
+**Text Installation**<br>
+Drag all the files (.txt) from the `resource` folder into the CS2 `resource` folder. The default relative path is:
 ```
 *Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource
 ```
 
 ---
 
-<h1>Loading Method</h1>
-Method 1
+<h1>Loading Methods</h1>
 
-Add in the Steam launch options
+**Method 1**  
+Add to the Steam launch options:
 ```
 +exec CS2Konc_CFG/CSKoncMod
 ```
 
 ---
 
-Method 2
-Create a file named autoexec.cfg and place it in
-```
-Counter-Strike Global Offensive\game\csgo\cfg
-```
-Inside, write
+**Method 2**  
+Create a file named `autoexec.cfg` in the `Counter-Strike Global Offensive\game\csgo\cfg` folder, and the content should be:
 ```
 exec CS2Konc_CFG/CSKoncMod
 ```
-<h3>Recommended to use the autoexec.cfg method</h3>
+### **Recommended to use the autoexec.cfg method**
 
 ---
 
 <h1>🖥️ Automatic Installation</h1>
-Double-click 【InstallCS2Konc_CFG.bat】 for automatic installation.
+
+Double-click **InstallCS2Konc_CFG.bat** for automatic installation.
 
 ## ⚙️ Related Settings
+Please modify the following files according to the documentation to update the default settings for the CFG:
 ```
 In config\OptPreference.cfg and KeyPreference.cfg
 ```
-Modify according to the documentation to change the default CFG settings.
