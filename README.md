@@ -1,9 +1,9 @@
 <h1 align="center">CS2Konc-CFG</h1>
 
 ## 💼CS2Konc-CFG介紹
-CS2Konc-CFG是一個輕量級的CS2 CFG項目，整合了一些常見的功能，同時提供強大的自定義選項。
-使用遊戲內的輪盤選單，🚀使玩家可以在遊戲中以視覺化的方式訪問 CS2Konc-CFG 的功能。
-CS2Konc-CFG 主要是為而輕量設計的，同時全功能都能在 sv_cheats 0 下運行，也包含了練圖模式在 sv_cheats 1 下運行，讓玩家快速熟悉地圖跟道具，同樣有視覺化的方式訪問。在大多數情況下，使用 CS2Konc-CFG 不會導致 VAC 封禁。這僅僅是一個 CFG 專案。官方提供的功能👍
+**CS2Konc-CFG**是一個輕量級的CS2 CFG項目，整合了一些常見的功能，同時提供強大的自定義選項。
+使用遊戲內的輪盤選單，🚀使玩家可以在遊戲中以視覺化的方式訪問 **CS2Konc-CFG** 的功能。
+**CS2Konc-CFG** 主要是為而輕量設計的，同時全功能都能在 sv_cheats 0 下運行，也包含了練圖模式在 sv_cheats 1 下運行，讓玩家快速熟悉地圖跟道具，同樣有視覺化的方式訪問。在大多數情況下，使用 **CS2Konc-CFG** 不會導致 **VAC** 封禁。這僅僅是一個 CFG 專案。官方提供的功能👍
 
 ## ✨ 特性
 
@@ -60,8 +60,11 @@ exec CS2Konc_CFG/CSKoncMod
 推薦用autoexec.cfg方式
 
 ---
-<H1>自動安裝<H1>
+<h1>🖥️自動安裝</h1>
 【InstallCS2Konc_CFG.bat】雙擊自動安裝
 
-## 相關設定
-在【config\OptPreference.cfg跟KeyPreference.cfg】根據文檔進行修改，修改CFG預設置
+## ⚙️相關設定
+```
+【在config\OptPreference.cfg跟KeyPreference.cfg】
+```
+根據文檔進行修改，即可修改CFG預設置
