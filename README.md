@@ -41,7 +41,7 @@
 **！此 CFG 會覆蓋原有設置，使用之前請先備份原先 CFG 以防意外！**
 
 ## 🚀 安裝說明
-下載並解壓縮文件，將 `CS2Konc_CFG` 資料夾整個拖到 CFG 資料夾，預設的相對路徑為：
+下載並解壓縮文件，將 `CS2Konc_CFG` 資料夾整個拖到 `CFG` 資料夾，預設的相對路徑為：
 ```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
@@ -82,5 +82,5 @@ exec CS2Konc_CFG/CSKoncMod
 ## ⚙️ 相關設定
 請根據文檔修改以下檔案以更新 CFG 預設設置：
 ```
-在 config\OptPreference.cfg 和 KeyPreference.cfg
+config\OptPreference.cfg 和 KeyPreference.cfg
 ```

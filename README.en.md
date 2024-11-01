@@ -41,7 +41,7 @@
 **! This CFG will overwrite existing settings, please back up the original CFG before use to avoid accidents!**
 
 ## 🚀 Installation Instructions
-Download and unzip the file, drag the entire `CS2Konc_CFG` folder into the CFG folder. The default relative path is:
+Download and unzip the file, drag the entire `CS2Konc_CFG` folder into the `CFG` folder. The default relative path is:
 ```
 *Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
@@ -82,5 +82,5 @@ Double-click **InstallCS2Konc_CFG.bat** for automatic installation.
 ## ⚙️ Related Settings
 Please modify the following files according to the documentation to update the default settings for the CFG:
 ```
-In config\OptPreference.cfg and KeyPreference.cfg
+config\OptPreference.cfg and KeyPreference.cfg
 ```
