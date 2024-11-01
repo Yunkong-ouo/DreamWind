@@ -1,0 +1,47 @@
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+🔥 Special Note
+! This CFG will overwrite the original settings. Please back up the original CFG before use to prevent any accidents!
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+CS2Konc_CFG installation example path:
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+【Automatic Installation】
+Drag the CS2Konc_CFG folder into the CFG folder and double-click InstallCS2Konc_CFG.bat for automatic installation.
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+【Manual Installation】
+Drag the CS2Konc_CFG folder into the CFG folder.
+
+Loading Methods
+Method 1
+Add the following to the launch options:
++exec CS2Konc_CFG/CSKoncMod
+Method 2
+Create an autoexec.cfg file and write:
+exec CS2Konc_CFG/CSKoncMod 
+(Recommended to use autoexec.cfg)
+Example path for autoexec.cfg:
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+
+Text Installation: Drag the files (.txt) from the resource folder into CS2's resource folder.  
+Example path:  
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+【CFG Settings】
+Modify config/OptPreference.cfg and KeyPreference.cfg according to the documentation.
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+【Usage Instructions】
+Hold down Right Shift to open the wheel, move the mouse to select a function, and release Right Shift to confirm the selection.  
+The scroll wheel can be used to scroll up and down.
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
