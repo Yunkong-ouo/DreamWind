@@ -1,3 +1,10 @@
+```markdown
+<div align="right">
+
+**繁體中文** | [简体中文](./README.zh-CN.md) | [English](./README.en.md)
+
+</div>
+
 <div align="center">
     <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/ditou.jpg" alt="image">
 </div>
@@ -10,7 +17,6 @@
 **CS2Konc-CFG** 主要是為而輕量設計的，同時全功能都能在 sv_cheats 0 下運行，也包含了練圖模式在 sv_cheats 1 下運行，讓玩家快速熟悉地圖跟道具，同樣有視覺化的方式訪問。在大多數情況下，使用 **CS2Konc-CFG** 不會導致 **VAC** 封禁。這僅僅是一個 CFG 專案。官方提供的功能👍
 
 ## ✨ 特性
-
 - 🔥 配置迅速
 - 💤 介面簡潔
 - 📦 預置插件
@@ -80,3 +86,6 @@ exec CS2Konc_CFG/CSKoncMod
 【在config\OptPreference.cfg跟KeyPreference.cfg】
 ```
 根據文檔進行修改，即可修改CFG預設置
+```
+
+這樣就完成了按照您要求的格式整理。如果有其他需要修改的地方，隨時告訴我！
