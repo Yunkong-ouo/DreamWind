@@ -1,15 +1,21 @@
-"Tokens" {
+"Tokens" 
+{
 
     "NextPage"                      "下一页 \n \n \n \n"
     "BackPage"                      "上一页 \n \n \n \n"
+    "WheelNexttPage"                "向下滚轮\n切换下一页 \n \n \n"
+    "WheelBackPage"                 "向上滚轮\n切换上一页 \n \n \n"
+    "SwitchToNextPage"              "切换下一个页面"  
+    "SwitchToPreviousPage"          "切换上一个页面"
+
     "PreviousLevel"                 "回到上一层 \n \n \n \n"
     "AtFirstPage"                   "已到第一页 \n \n \n \n"
     "AtLastPage"                    "已到最后一页 \n \n \n \n"
-    "NoneFunction"                          ""
+    "NoneFunction"                  ""
 
     "FrontPage"                     "首页 \n \n \n \n"
-    "ReloadConfiguration"           "重新加载CFG \n \n \n \n"
-    "ConfigurationSettings"         "CFG配置设置 \n \n \n \n"
+    "ReloadConfiguration"           "重新加载配置 \n \n \n \n"
+    "ConfigurationSettings"         "CFG设置 \n \n \n \n"
 
     "MouseWheelJumpSettings"        "滚轮跳设置 \n \n \n \n"
     "WheelJumpUp"                   "向上滚轮跳 \n \n \n \n"
@@ -17,13 +23,14 @@
     "WheelJumpBoth"                 "上下滚轮跳 \n \n \n \n"
     "CustomizeWheelJump"            "自定义滚轮跳 \n \n \n \n"
 
-    "CrosshairRecoilSettings"       "准星后坐力设置 \n \n \n \n"
-    "RecoilON"                      "开启后坐力 \n \n \n \n"
-    "RecoilOFF"                     "关闭后坐力 \n \n \n \n"
-    "QuickRecoilReset"              "快速后坐力回正 \n \n \n \n"
-    "DisplayRecoilReset"            "显示后坐力回正 \n \n \n \n"
+    "CrosshairFollowSettings"       "准星跟随设置 \n \n \n \n"
+    "CrosshairFollowON"             "开启准星跟随 \n \n \n \n"
+    "CrosshairFollowOFF"            "关闭准星跟随 \n \n \n \n"
+    "QuickCrosshairResetON"         "开启准星快速回正 \n \n \n \n"
+    "QuickCrosshairResetOFF"        "关闭准星快速回正 \n \n \n \n"
+    "CrosshairRecoilDisplayON"      "开启准星显示后座力 \n \n \n \n"
+    "CrosshairRecoilDisplayOFF"     "关闭准星显示后座力 \n \n \n \n"
 
-    "JumpThrowSettings"             "跳投设置 \n \n \n \n"
     "WKeyThrow"                     "W键丢掷 \n \n \n \n"
     "DKeyThrow"                     "D键丢掷 \n \n \n \n"
     "AKeyThrow"                     "A键丢掷 \n \n \n \n"
@@ -31,6 +38,30 @@
 
     "SpaceDuckJumpON"               "开启空格大跳 \n \n \n \n"
     "SpaceDuckJumpOFF"              "关闭空格大跳 \n \n \n \n"
+
+    "AutoStopSingle"                "单键急停 \n \n \n \n"
+    "AutoStopDouble"                "双键急停 \n \n \n \n"
+    "AutoStopSnaptap"               "Snaptap急停 \n \n \n \n"
+    "AutoStopOFF"                   "关闭急停 \n \n \n \n"
+
+    "RouletteCuttingToolON"         "开启轮盘切道具 \n \n \n \n"
+    "RouletteCuttingToolOFF"        "关闭轮盘切道具 \n \n \n \n"
+
+    "ShootCancelUnpackingON"        "开启开枪取消拆包 \n \n \n \n"
+    "ShootCancelUnpackingOFF"       "关闭开枪取消拆包 \n \n \n \n"
+
+    "AutoSwitchWeaponON"            "开启狙击枪快速切枪 \n \n \n \n"
+    "AutoSwitchWeaponOFF"           "关闭狙击枪快速切枪 \n \n \n \n"
+
+    "WashFrequencySettings"         "洗频设置 \n \n \n \n"
+    "WashFrequencyDocumentNB"       "切换到NB文本 \n \n \n \n"
+    "WashFrequencyDocumentHF"       "切换到HF文本 \n \n \n \n"
+    "WashFrequencyDocumentEZ"       "切换到EZ文本 \n \n \n \n"
+    "WashFrequencySpeedFast"        "洗频速度快 \n \n \n \n"
+    "WashFrequencySpeedMedium"      "洗频速度中 \n \n \n \n"
+    "WashFrequencySpeedSlow"        "洗频速度慢 \n \n \n \n"
+    "WashFrequencyON"               "开启洗频 \n \n \n \n"
+    "WashFrequencyOFF"              "关闭洗频 \n \n \n \n"
 
     "TextOutputSettings"            "文字输出设置 \n \n \n \n"
     "NoTextOutput"                  "关闭文字输出 \n \n \n \n"
@@ -40,11 +71,11 @@
     "ViewCurrentConfiguration"      "输出当前CFG设置 \n \n \n \n"
     "ClearConsole"                  "清空控制台 \n \n \n \n"
 
-    "RunMapMenu"                    "跑图菜单 \n \n \n \n"
-    "StartPracticeSettings"       "开始运行跑图设置 \n \n \n \n"
+    "RunMapMenu"                    "跑图选单 \n \n \n \n"
+    "StartPracticeSettings"         "开始运行跑图设置 \n \n \n \n"
     "PleaseRunTheMap"               "请运行跑图 \n \n \n \n"
 
-    "GeneralSettings"               "配置设置 \n \n \n \n"
+    "GeneralSettings"               "常规设置 \n \n \n \n"
     "NoClipON"                      "开启飞行 \n \n \n \n"
     "NoClipOFF"                     "关闭飞行 \n \n \n \n"
     "InfiniteAmmoON"                "开启无限子弹 \n \n \n \n"
@@ -58,6 +89,10 @@
     "GodModeOFF"                    "关闭不死模式 \n \n \n \n"
     "CraterDisplayON"               "开启弹坑显示 \n \n \n \n"
     "CraterDisplayOFF"              "关闭弹坑显示 \n \n \n \n"
+    "ProjectileDisplayON"           "开启投掷物显示 \n \n \n \n"
+    "ProjectileDisplayOFF"          "关闭投掷物显示 \n \n \n \n"
+    "ProjectileTrajectoryON"        "开启投掷物轨迹 \n \n \n \n"
+    "ProjectileTrajectoryOFF"       "关闭投掷物轨迹 \n \n \n \n"
 
     "PlayerSettings"                "玩家设置 \n \n \n \n"
     "Teleport"                      "传送 \n \n \n \n"
@@ -68,6 +103,8 @@
     "ThirdPersonView"               "第三人称视角 \n \n \n \n"
     "FirstPersonView"               "第一人称视角 \n \n \n \n"
     "LockView"                      "锁定视角 \n \n \n \n"
+    "SaveCurPos"                    "保存当前位置 \n \n \n \n"
+    "ReturnToPos"                   "回到保存位置 \n \n \n \n"
 
     "BotSettings"                   "BOT设置 \n \n \n \n"
     "AddBot"                        "增加BOT \n \n \n \n"
@@ -81,14 +118,11 @@
     "BotMovementOFF"                "关闭BOT移动 \n \n \n \n"
 
     "MapSettings"                   "地图设置 \n \n \n \n"
-    "ProjectileDisplayON"           "开启投掷物显示 \n \n \n \n"
-    "ProjectileDisplayOFF"          "关闭投掷物显示 \n \n \n \n"
-    "ProjectileTrajectoryON"        "开启投掷物轨迹 \n \n \n \n"
-    "ProjectileTrajectoryOFF"       "关闭投掷物轨迹 \n \n \n \n"
     "RestartMap"                    "重新开始地图 \n \n \n \n"
     "RespawnPoint"                  "重生点 \n \n \n \n"
     "ChangeTeam"                    "更换队伍 \n \n \n \n"
     "KillSelf"                      "自杀 \n \n \n \n"
+    "RoomIP"                        "房间IP"
 
     "Mirage"                        "【Mirage】沙漠迷城 \n \n \n \n"
     "Dust2"                         "【Dust2】炙热沙城2 \n \n \n \n"
@@ -98,9 +132,6 @@
     "Inferno"                       "【Inferno】炼狱小镇 \n \n \n \n"
     "Nuke"                          "【Nuke】核子危机 \n \n \n \n"
     "Anubis"                        "【Anubis】阿努比 \n \n \n \n"
-
-    "SetTSpawn"                     "设置为T重生点 \n \n \n \n"
-    "SetCTSpawn"                    "设置为CT重生点 \n \n \n \n"
 
     "TSpawn1"                       "T重生点1 \n \n \n \n"
     "TSpawn2"                       "T重生点2 \n \n \n \n"
@@ -135,4 +166,5 @@
     "CTSpawn14"                     "CT重生点14 \n \n \n \n"
     "CTSpawn15"                     "CT重生点15 \n \n \n \n"
     "CTSpawn16"                     "CT重生点16 \n \n \n \n"
+    
 }

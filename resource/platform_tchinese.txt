@@ -1,10 +1,11 @@
-"Tokens" {
-
+"Tokens" 
+{
+    
     "NextPage"                      "下一頁 \n \n \n \n"
     "BackPage"                      "上一頁 \n \n \n \n"
     "WheelNexttPage"                "向下滾輪\n切換下一頁 \n \n \n"
     "WheelBackPage"                 "向上滾輪\n切換上一頁 \n \n \n"
-    "SwitchToNextPage"              "切換下一個頁面"  
+    "SwitchToNextPage"              "切換下一個頁面"
     "SwitchToPreviousPage"          "切換上一個頁面"
 
     "PreviousLevel"                 "回到上一層 \n \n \n \n"
@@ -22,12 +23,12 @@
     "WheelJumpBoth"                 "上下滾輪跳 \n \n \n \n"
     "CustomizeWheelJump"            "自訂滾輪跳 \n \n \n \n"
 
-    "CrosshairFollowSettings"       "準星跟隨設置 \n \n \n \n"  
-    "CrosshairFollowON"             "開啟準星跟隨 \n \n \n \n"  
-    "CrosshairFollowOFF"            "關閉準星跟隨 \n \n \n \n"  
-    "QuickCrosshairResetON"         "開啟準星快速回正 \n \n \n \n"  
-    "QuickCrosshairResetOFF"        "關閉準星快速回正 \n \n \n \n"  
-    "CrosshairRecoilDisplayON"      "開啟準星顯示後座力 \n \n \n \n"  
+    "CrosshairFollowSettings"       "準星跟隨設置 \n \n \n \n"
+    "CrosshairFollowON"             "開啟準星跟隨 \n \n \n \n"
+    "CrosshairFollowOFF"            "關閉準星跟隨 \n \n \n \n"
+    "QuickCrosshairResetON"         "開啟準星快速回正 \n \n \n \n"
+    "QuickCrosshairResetOFF"        "關閉準星快速回正 \n \n \n \n"
+    "CrosshairRecoilDisplayON"      "開啟準星顯示後座力 \n \n \n \n"
     "CrosshairRecoilDisplayOFF"     "關閉準星顯示後座力 \n \n \n \n"
 
     "WKeyThrow"                     "W鍵丟擲 \n \n \n \n"
@@ -130,7 +131,7 @@
     "Ancient"                       "【Ancient】古代遺跡 \n \n \n \n"
     "Inferno"                       "【Inferno】煉獄小鎮 \n \n \n \n"
     "Nuke"                          "【Nuke】核子危機 \n \n \n \n"
-    "Anubis"                        "【Anubis】阿努比 \n \n \n \n"                                                              
+    "Anubis"                        "【Anubis】阿努比 \n \n \n \n"
 
     "TSpawn1"                       "T重生點1 \n \n \n \n"
     "TSpawn2"                       "T重生點2 \n \n \n \n"
@@ -165,4 +166,5 @@
     "CTSpawn14"                     "CT重生點14 \n \n \n \n"
     "CTSpawn15"                     "CT重生點15 \n \n \n \n"
     "CTSpawn16"                     "CT重生點16 \n \n \n \n"
+
 }
