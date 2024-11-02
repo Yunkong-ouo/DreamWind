@@ -25,19 +25,20 @@ In most cases, using **CS2Konc-CFG** will not result in a **VAC** ban. This is m
 - 🚀 Lightning fast
 
 ## 📝 Feature Description
-| Name                      | Description                               |
+| Name                      | Description                             |
 |------------------------- |------------------------------------------|
-| Auto Stop                | Quickly decrease speed using WASD        |
-| Jump Throw Binding       | Automatically throw with WASD direction or without direction |
-| Space Big Jump           | Automatically perform a big jump when pressing the space key |
-| Wheel Item Switching      | Saves key presses; just hold the bound key to bring up the wheel, and tapping can also switch items |
-| Quick Sniper Switching    | Quickly switch weapons by pressing Q     |
-| Auto Frequency Wash       | Internal key wash frequency text, type faster than others |
-| Custom Text Output        | Output in close/control/team/all/switch CFG |
-| Crosshair Utility Functions| Functions related to crosshair tracking   |
-| Scroll Wheel Utility Functions| Convenient settings for scroll wheel settings, can also customize scroll wheel settings |
-| Practice Mode             | One-click setting for practice mode, can also customize related functions |
-| Reset CFG Flash Reminder   | Changing interface color when you reset CFG, reminding you of the CFG reset |
+| Auto Stop                 | Quickly decrease speed using WASD
+| Jump Throw Binding        | Automatically throw with WASD direction or without direction
+| Space Big Jump            | Automatically perform a big jump when pressing the space key
+| Shoot to Cancel Unpacking | When you press the fire button, it automatically cancels unpacking; release to continue unpacking.
+| Wheel Item Switching      | Saves key presses; just hold the bound key to bring up the wheel, and tapping can also switch items
+| Quick Sniper Switching    | Quickly switch weapons by pressing Q
+| Auto Frequency Wash       | Internal key wash frequency text, type faster than others
+| Custom Text Output        | Output in close/control/team/all/switch CFG
+| Crosshair Utility Functions | Functions related to crosshair tracking
+| Scroll Wheel Utility Functions | Convenient settings for scroll wheel settings, can also customize scroll wheel settings
+| Practice Mode             | One-click setting for practice mode, can also customize related functions
+| Reset CFG Flash Reminder  | Changing interface color when you reset CFG, reminding you of the CFG reset
 
 ## 🔥 Special Note
 **! This CFG will overwrite existing settings, please back up the original CFG before use to avoid accidents!**
