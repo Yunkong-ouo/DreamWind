@@ -5,7 +5,7 @@ REM 檢查 64 位系統路徑
 if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
 
 REM 跳過管理員權限
-goto awa
+REM goto awa
 
 REM 確認是否有管理員權限
 bcdedit >nul
