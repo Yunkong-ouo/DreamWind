@@ -167,10 +167,10 @@ void generateLoadingFile(const string &loadingFile, const string &tickerContentN
 	{
 		cout << "alias " << tickerContentName << i << " \"\";" << (i < fileCount ? " " : "");
 	}
-	cout << "\"\nalias tmpts \"echoln New Beginning " << tickerContentName << "\"\n";
+	cout << "\"\nalias " << tickerContentName << "tmpts " << "\"echoln New Beginning " << tickerContentName << "\"\n";
 	foru(i, 1, fileCount)
 	{
-		cout << "alias " << tickerContentName << i << "_begin \"" << tickerContentName << "clear; alias " << tickerContentName << i << " " << tickerContentName << "; tmpts\"\n";
+		cout << "alias " << tickerContentName << i << "_begin \"" << tickerContentName << "clear; alias " << tickerContentName << i << " " << tickerContentName << "; " << tickerContentName << "tmpts\"\n";
 	}
 	cout << "\nexec_async " << utilPath << "/" << folderName << "/" << tickerName << "Setup\n";
 	fflush(stdout);
@@ -330,7 +330,7 @@ int main()
 	}
 
 	cout << "所有文件已成功生成！" << endl;
-	cout << "按任繼續..." << endl;
+	cout << "按任意鍵繼續..." << endl;
 	cin.ignore();
 	cin.get();
 
