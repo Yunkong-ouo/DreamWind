@@ -42,6 +42,7 @@
     "BhopON"                        "開啟空格連跳 \n \n \n \n"
     "BhopOFF"                       "關閉空格連跳 \n \n \n \n"
 
+    "AutoStopFull"                  "全向急停 \n \n \n \n"
     "AutoStopSingle"                "單鍵急停 \n \n \n \n"
     "AutoStopDouble"                "雙鍵急停 \n \n \n \n"
     "AutoStopSnaptap"               "Snaptap急停 \n \n \n \n"

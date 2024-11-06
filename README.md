@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-    <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/ditou.jpg" alt="image" width="600">
+    <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/CS2.jpg" alt="image" width="800">
 </div>
 
 <h1 align="center">CS2Konc-CFG</h1>
