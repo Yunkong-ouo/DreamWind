@@ -10,6 +10,10 @@
 
 <h1 align="center">CS2Konc-CFG</h1>
 
+[跳轉到🔥 特別說明](#-特別說明)
+
+
+
 ## 💼 CS2Konc-CFG 介紹
 **CS2Konc-CFG** 是一個輕量級的 CS2 CFG 項目，整合了一些常見的功能，同時提供強大的自定義選項。使用遊戲內的輪盤選單，🚀 使玩家可以在遊戲中以視覺化的方式訪問 **CS2Konc-CFG** 的功能。
 
@@ -80,7 +84,7 @@ exec CS2Konc_CFG/CSKoncMod
 
 ---
 
-<h1>🖥️ 自動安裝</h1>
+## 🖥️ 自動安裝
 
 雙擊 **InstallCS2Konc_CFG.bat** 進行自動安裝。
 
