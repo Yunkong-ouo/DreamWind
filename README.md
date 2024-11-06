@@ -10,8 +10,7 @@
 
 <h1 align="center">CS2Konc-CFG</h1>
 
-[跳轉到🔥 特別說明](#-特別說明)
-
+<a href="#CS2Konc-CFG 介紹" style="padding:10px 20px; background-color:#007bff; color:white; border-radius:5px; text-decoration:none;">跳轉到目標</a>
 
 
 ## 💼 CS2Konc-CFG 介紹
