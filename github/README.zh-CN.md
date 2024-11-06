@@ -10,6 +10,15 @@
 
 <h1 align="center">CS2Konc-CFG</h1>
 
+<p align="center">
+    <a href="https://github.com/Yunkong-ouo/Cs2CfgHighlighterExtension">
+        <img alt="CS2 Visual Studio Code 高亮扩展" src="https://img.shields.io/badge/CS2%20VSCode%20%E9%AB%98%E4%BA%AE%E6%89%A9%E5%B1%95-blue?style=for-the-badge&logo=github">
+    </a>
+    <a href="https://github.com/Yunkong-ouo/CS2Konc_CFG">
+        <img alt="CS2Konc_CFG" src="https://img.shields.io/badge/CS2%20Konc%20CFG-green?style=for-the-badge&logo=github">
+    </a>
+</p>
+
 ## 💼 CS2Konc-CFG 介绍
 **CS2Konc-CFG** 是一个轻量级的 CS2 CFG 项目，整合了一些常见的功能，同时提供强大的自定义选项。使用游戏内的轮盘选单，🚀 使玩家可以在游戏中以视觉化的方式访问 **CS2Konc-CFG** 的功能。
 
