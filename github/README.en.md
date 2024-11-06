@@ -10,6 +10,15 @@
 
 <h1 align="center">CS2Konc-CFG</h1>
 
+<p align="center">
+    <a href="https://github.com/Yunkong-ouo/Cs2CfgHighlighterExtension">
+        <img alt="CS2 Visual Studio Code Highlight Extension" src="https://img.shields.io/badge/CS2%20VSCode%20Highlight%20Extension-blue?style=for-the-badge&logo=github">
+    </a>
+    <a href="https://github.com/Yunkong-ouo/CS2Konc_CFG">
+        <img alt="CS2Konc_CFG" src="https://img.shields.io/badge/CS2%20Konc%20CFG-green?style=for-the-badge&logo=github">
+    </a>
+</p>
+
 ## 💼 Introduction to CS2Konc-CFG
 **CS2Konc-CFG** is a lightweight CS2 CFG project that integrates some common features while providing powerful customization options. Using an in-game wheel menu, 🚀 players can visually access the features of **CS2Konc-CFG** during gameplay.
 
