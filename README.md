@@ -8,9 +8,9 @@
     <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/CS2.jpg" alt="image" width="800">
 </div>
 
-<h1 align="center">CS2Konc-CFG</h1>
-
-<a href="#CS2Konc-CFG 介紹" style="padding:10px 20px; background-color:#007bff; color:white; border-radius:5px; text-decoration:none;">跳轉到目標</a>
+<div align="center">
+  <a href="https://example.com" style="padding:10px 20px; background-color:#007bff; color:white; border-radius:5px; text-decoration:none;">跳轉到外部網站</a>
+</div>
 
 
 ## 💼 CS2Konc-CFG 介紹
