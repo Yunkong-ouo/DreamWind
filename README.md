@@ -8,6 +8,14 @@
     <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/CS2.jpg" alt="image" width="800">
 </div>
 
+<p align="center">
+    <a href="https://github.com/Yunkong-ouo/Cs2CfgHighlighterExtension">
+        <img alt="CS2 Visual Studio Code 高亮擴展" src="https://img.shields.io/badge/CS2%20VSCode%20%E9%AB%98%E4%BA%AE%E6%93%B4%E5%B1%95-blue?style=for-the-badge&logo=github">
+    </a>
+    <a href="https://github.com/Yunkong-ouo/CS2Konc_CFG">
+        <img alt="CS2Konc_CFG" src="https://img.shields.io/badge/CS2%20Konc%20CFG-green?style=for-the-badge&logo=github">
+    </a>
+</p>
 
 ## 💼 CS2Konc-CFG 介紹
 **CS2Konc-CFG** 是一個輕量級的 CS2 CFG 項目，整合了一些常見的功能，同時提供強大的自定義選項。使用遊戲內的輪盤選單，🚀 使玩家可以在遊戲中以視覺化的方式訪問 **CS2Konc-CFG** 的功能。
