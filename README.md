@@ -8,10 +8,6 @@
     <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/CS2.jpg" alt="image" width="800">
 </div>
 
-<div align="center">
-  <a href="https://example.com" style="padding:10px 20px; background-color:#007bff; color:white; border-radius:5px; text-decoration:none;">跳轉到外部網站</a>
-</div>
-
 
 ## 💼 CS2Konc-CFG 介紹
 **CS2Konc-CFG** 是一個輕量級的 CS2 CFG 項目，整合了一些常見的功能，同時提供強大的自定義選項。使用遊戲內的輪盤選單，🚀 使玩家可以在遊戲中以視覺化的方式訪問 **CS2Konc-CFG** 的功能。
