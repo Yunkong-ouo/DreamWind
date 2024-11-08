@@ -167,6 +167,7 @@ int readSleepTime(const string &prompt, const vector<int> &defaults)
 // 生成所有檔案
 void generateFiles(const string &folderName, const string &tickerName, const string &tickerContentName, int fileCount, const string &utilPath, int sleepTime1, int sleepTime2, char outputDone)
 {
+	setConsoleCodePage();
 	// 生成檔案
 	foru(i, 1, fileCount)
 	{
