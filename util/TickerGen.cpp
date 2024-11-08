@@ -72,21 +72,52 @@ inline LXF rin()
 	}
 }
 
-// 檢查字符串是否符合要求
-bool isValidContentName(const string &name)
+// 檢查字串是否僅包含英文字母和數字，且開頭為英文字母
+bool isValidFileName(const string &str)
 {
-	return name.length() <= 3 && all_of(name.begin(), name.end(), ::isalpha);
+	if (str.empty() || !isalpha(str[0]))
+		return false; // 檢查開頭是否為英文字母
+
+	for (char ch : str)
+	{
+		if (!isalnum(ch))
+		{
+			return false; // 僅允許英文字母和數字
+		}
+	}
+	return true;
 }
 
+// 檢查函數名稱是否符合條件（3 個字母內，開頭為英文字母，僅限英文和數字）
+bool isValidContentName(const string &str)
+{
+	if (str.empty() || str.size() > 3 || !isalpha(str[0]))
+		return false; // 檢查是否為 1-3 個字符且開頭為英文字母
+
+	for (char ch : str)
+	{
+		if (!isalnum(ch))
+		{
+			return false; // 僅允許英文字母和數字
+		}
+	}
+	return true;
+}
+
+// 檢查資料夾名稱是否僅包含英文字母或數字，且開頭為英文字母
 bool isAlphanumeric(const string &str)
 {
-	return all_of(str.begin(), str.end(), ::isalnum);
-}
+	if (str.empty() || !isalpha(str[0]))
+		return false; // 檢查開頭是否為英文字母
 
-// 檢查字符串是否只包含字母
-bool isAlpha(const string &str)
-{
-	return all_of(str.begin(), str.end(), ::isalpha);
+	for (char ch : str)
+	{
+		if (!isalnum(ch))
+		{
+			return false; // 僅允許英文字母和數字
+		}
+	}
+	return true;
 }
 
 // 將路徑中的反斜杠轉為正斜杠
@@ -133,81 +164,90 @@ int readSleepTime(const string &prompt, const vector<int> &defaults)
 	}
 }
 
-// 生成文件
-void generateFile(const string &filename, const string &tickerContentName, int sleepTime1, int sleepTime2, int index, char outputDone)
+// 生成所有檔案
+void generateFiles(const string &folderName, const string &tickerName, const string &tickerContentName, int fileCount, const string &utilPath, int sleepTime1, int sleepTime2, char outputDone)
 {
-	freopen(filename.c_str(), "w", stdout);
-	string tickerNameBegin = tickerContentName + to_string(index);
-
-	// 生成 sleep 命令
-	foru(j, 1, index - 1)
-	{
-		cout << "sleep " << sleepTime1 << "\n";
-	}
-	cout << (tickerNameBegin + "_begin") << '\n';
-
-	// 交替輸出 sleep 和 Ticker 內容
-	for (int k = 2; k <= 120001; k++)
-	{
-		cout << (k % 2 == 0 ? "sleep " + to_string(sleepTime2) + "\n" : tickerNameBegin + "\n");
-	}
-
-	if (outputDone == 'y' || outputDone == 'Y')
-	{
-		cout << "echoln done " + tickerNameBegin << endl;
-	}
-}
-
-// 生成 Loading.cfg
-void generateLoadingFile(const string &loadingFile, const string &tickerContentName, int fileCount, const string &utilPath, const string &folderName, const string &tickerName)
-{
-	freopen(loadingFile.c_str(), "w", stdout);
-	cout << "alias " << tickerContentName << "clear \"";
+	// 生成檔案
 	foru(i, 1, fileCount)
 	{
-		cout << "alias " << tickerContentName << i << " \"\";" << (i < fileCount ? " " : "");
+		string filename = folderName + "/" + tickerName + to_string(i) + ".cfg";
+		freopen(filename.c_str(), "w", stdout);
+		string tickerNameBegin = tickerContentName + to_string(i);
+
+		// 生成 sleep 命令
+		foru(j, 1, i - 1)
+		{
+			cout << "sleep " << sleepTime1 << "\n";
+		}
+		cout << (tickerNameBegin + "_Begin") << '\n';
+
+		// 交替輸出 sleep 和 Ticker 內容
+		for (int k = 2; k <= 120001; k++)
+		{
+			cout << (k % 2 == 0 ? "sleep " + to_string(sleepTime2) + "\n" : tickerNameBegin + "\n");
+		}
+
+		if (outputDone == 'y' || outputDone == 'Y')
+		{
+			cout << "echoln done " + tickerNameBegin << endl;
+		}
 	}
-	cout << "\"\nalias " << tickerContentName << "tmpts " << "\"echoln New Beginning " << tickerContentName << "\"\n";
-	foru(i, 1, fileCount)
+
+	// 生成 Manager.cfg
 	{
-		cout << "alias " << tickerContentName << i << "_begin \"" << tickerContentName << "clear; alias " << tickerContentName << i << " " << tickerContentName << "; " << tickerContentName << "tmpts\"\n";
+		string managerFile = folderName + "/" + tickerName + "Manager.cfg";
+		freopen(managerFile.c_str(), "w", stdout);
+		cout << "exec " << utilPath << "/" << folderName << "/" << tickerName << "Defines\n";
+		cout << "sv_cheats 1\nDontExecuteThisAgain\n";
+		cout << "exec_async " << utilPath << "/" << folderName << "/" << tickerName << "Loading\n";
+		cout << "sv_cheats 1\n";
+		fflush(stdout);
+		freopen("CON", "w", stdout);
 	}
-	cout << "\nexec_async " << utilPath << "/" << folderName << "/" << tickerName << "Setup\n";
-	fflush(stdout);
-	freopen("CON", "w", stdout); // 将输出重定向回控制台
-}
 
-// 生成 Defines.cfg 文件
-void generateDefinesFile(const string &definesFile, const string &tickerContentName)
-{
-	freopen(definesFile.c_str(), "w", stdout);
-	cout << "alias " << tickerContentName << " \"\"\n";
-	fflush(stdout);
-	freopen("CON", "w", stdout);
-}
-
-// 生成 Manager.cfg 文件
-void generateManagerFile(const string &managerFile, const string &utilPath, const string &folderName, const string &tickerName)
-{
-	freopen(managerFile.c_str(), "w", stdout);
-	cout << "exec " << utilPath << "/" << folderName << "/" << tickerName << "Defines\n";
-	cout << "sv_cheats 1\nDontExecuteThisAgain\n";
-	cout << "exec_async " << utilPath << "/" << folderName << "/" << tickerName << "Loading\n";
-	cout << "sv_cheats 1\n";
-	fflush(stdout);
-	freopen("CON", "w", stdout);
-}
-
-// 生成 Setup.cfg 文件
-void generateSetupFile(const string &setupFile, int fileCount, const string &utilPath, const string &folderName, const string &tickerName)
-{
-	freopen(setupFile.c_str(), "w", stdout);
-	foru(i, 1, fileCount)
+	// 生成 Defines.cfg
 	{
-		cout << "exec_async " << utilPath << "/" << folderName << "/" << tickerName << i << "\n";
+		string definesFile = folderName + "/" + tickerName + "Defines.cfg";
+		freopen(definesFile.c_str(), "w", stdout);
+		cout << "alias " << tickerContentName << " \"\"\n";
+		fflush(stdout);
+		freopen("CON", "w", stdout);
 	}
-	fflush(stdout);
-	freopen("CON", "w", stdout);
+
+	// 生成 Setup.cfg
+	{
+		string setupFile = folderName + "/" + tickerName + "Setup.cfg";
+		freopen(setupFile.c_str(), "w", stdout);
+		foru(i, 1, fileCount)
+		{
+			cout << "exec_async " << utilPath << "/" << folderName << "/" << tickerName << i << "\n";
+		}
+		fflush(stdout);
+		freopen("CON", "w", stdout);
+	}
+
+	// 生成 Loading.cfg
+	{
+		string loadingFile = folderName + "/" + tickerName + "Loading.cfg";
+		freopen(loadingFile.c_str(), "w", stdout);
+		cout << "alias " << tickerContentName << "_Clear \"";
+		foru(i, 1, fileCount)
+		{
+			cout << "alias " << tickerContentName << i << " \"\";" << (i < fileCount ? " " : "");
+		}
+		cout << "\"";
+
+		cout << "\nalias " << tickerContentName << "tmpts " << "\"echoln New Beginning " << tickerContentName << "\"\n";
+
+		foru(i, 1, fileCount)
+		{
+			cout << "alias " << tickerContentName << i << "_Begin \"" << tickerContentName << "_Clear; alias " << tickerContentName << i << " " << tickerContentName << "; " << tickerContentName << "tmpts\"\n";
+		}
+
+		cout << "\nexec_async " << utilPath << "/" << folderName << "/" << tickerName << "Setup\n";
+		fflush(stdout);
+		freopen("CON", "w", stdout); // 将输出重定向回控制台
+	}
 }
 
 int main()
@@ -224,62 +264,61 @@ int main()
 		fileCount = rin();
 	}
 
-	cout << "請輸入 Ticker 的檔案名稱（英文）：";
+	// 檔案名稱輸入與檢查
+	cout << "請輸入 Ticker 的檔案名稱（開頭英文，僅限英文和數字不能有中文）：";
 	cin >> tickerName;
-	while (!isAlpha(tickerName)) // 檢查是否為英文字符
+	while (!isValidFileName(tickerName))
 	{
-		cout << "無效的檔案名稱，請重新輸入（僅限英文）：";
+		cout << "無效的檔案名稱，請重新輸入（開頭英文，僅限英文和數字不能有中文）：";
 		cin >> tickerName;
 	}
+	cout << "有效的檔案名稱：" << tickerName << endl;
 
-	cout << "請輸入 Ticker 的參數名稱（3 個字母，英文）：";
+	// 函數名稱輸入與檢查
+	cout << "請輸入 Ticker 的函數名稱（3 個字母內，開頭英文，僅限英文和數字不能有中文）：";
 	cin >> tickerContentName;
 	while (!isValidContentName(tickerContentName))
 	{
-		cout << "無效的名稱，請重新輸入（3 個字母，英文）：";
+		cout << "無效的名稱，請重新輸入（3 個字母內，開頭英文，僅限英文和數字不能有中文）：";
 		cin >> tickerContentName;
 	}
+	cout << "有效的函數名稱：" << tickerContentName << endl;
 
-	// 提示用戶輸入資料夾名稱
-	cout << "請輸入資料夾名稱（僅限英文和數字）：";
+	// 資料夾名稱輸入與檢查
+	cout << "請輸入資料夾名稱（開頭英文，僅限英文和數字不能有中文）：";
 	cin >> folderName;
-
-	// 確保資料夾名稱符合要求
 	while (!isAlphanumeric(folderName))
 	{
-		cout << "無效的資料夾名稱，請重新輸入（僅限英文和數字）：";
+		cout << "無效的資料夾名稱，請重新輸入（開頭英文，僅限英文和數字不能有中文）：";
 		cin >> folderName;
 	}
 
-	// 嘗試創建資料夾
+	// 創建資料夾
 	if (mkdir(folderName.c_str()) != 0)
 	{
+		cout << "有效的資料夾名稱：" << folderName << endl;
 		cout << "資料夾已存在或創建失敗，將使用已存在的資料夾。" << endl;
 	}
 	else
 	{
+		cout << "有效的資料夾名稱：" << folderName << endl;
 		cout << "資料夾創建成功！" << endl;
 	}
 
-	// 提示用戶輸入路徑
+	// 路徑輸入
 	cout << "你的CFG資料夾/生成器位置，像這樣yyy/xxx\n請輸入路徑：";
-
-	// 清除输入缓冲区
 	cin.ignore(numeric_limits<streamsize>::max(), '\n'); // 清除缓冲区的残留输入
 	cin >> utilPath;
-
-	// 确保路径不为空
 	while (utilPath.empty())
 	{
-		cout << "路徑不能为空，請重新輸入：";
+		cout << "路徑不能為空，請重新輸入：";
 		cin.ignore(numeric_limits<streamsize>::max(), '\n'); // 清除缓冲区
 		cin >> utilPath;
 	}
-
 	convertBackslashesToSlashes(utilPath);
 
-	vector<int> sleepOptions1 = {600000, 700000, 800000};
-	vector<int> sleepOptions2 = {10, 9, 15};
+	vector<int> sleepOptions1 = {600000};
+	vector<int> sleepOptions2 = {10};
 	sleepTime1 = readSleepTime("請選擇 sleep 的時間", sleepOptions1);
 	sleepTime2 = readSleepTime("請選擇每次 sleep 的時間", sleepOptions2);
 
@@ -298,36 +337,8 @@ int main()
 		}
 	}
 
-	// 生成文件
-	foru(i, 1, fileCount)
-	{
-		string filename = folderName + "/" + tickerName + to_string(i) + ".cfg";
-		generateFile(filename, tickerContentName, sleepTime1, sleepTime2, i, outputDone);
-	}
-
-	// 生成 Manager.cfg
-	{
-		string managerFile = folderName + "/" + tickerName + "Manager.cfg";
-		generateManagerFile(managerFile, utilPath, folderName, tickerName);
-	}
-
-	// 生成 Defines.cfg
-	{
-		string definesFile = folderName + "/" + tickerName + "Defines.cfg";
-		generateDefinesFile(definesFile, tickerContentName);
-	}
-
-	// 生成 Setup.cfg
-	{
-		string setupFile = folderName + "/" + tickerName + "Setup.cfg";
-		generateSetupFile(setupFile, fileCount, utilPath, folderName, tickerName);
-	}
-
-	// 生成 Loading.cfg
-	{
-		string loadingFile = folderName + "/" + tickerName + "Loading.cfg";
-		generateLoadingFile(loadingFile, tickerContentName, fileCount, utilPath, folderName, tickerName);
-	}
+	// 调用生成文件的函数
+	generateFiles(folderName, tickerName, tickerContentName, fileCount, utilPath, sleepTime1, sleepTime2, outputDone);
 
 	cout << "所有文件已成功生成！" << endl;
 	cout << "按任意鍵繼續..." << endl;
