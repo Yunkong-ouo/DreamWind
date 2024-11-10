@@ -38,7 +38,11 @@
 
     "SpaceDuckJumpON"               "开启空格大跳 \n \n \n \n"
     "SpaceDuckJumpOFF"              "关闭空格大跳 \n \n \n \n"
+    
+    "BhopON"                        "开启空格连跳 \n \n \n \n"
+    "BhopOFF"                       "关闭空格连跳 \n \n \n \n"
 
+    "AutoStopFull"                  "全向急停 \n \n \n \n"
     "AutoStopSingle"                "单键急停 \n \n \n \n"
     "AutoStopDouble"                "双键急停 \n \n \n \n"
     "AutoStopSnaptap"               "Snaptap急停 \n \n \n \n"
