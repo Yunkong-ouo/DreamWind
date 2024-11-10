@@ -44,22 +44,16 @@ $script:bindingControlVerticalSpacing = 5
 
 # 獲取當前目錄
 $currentDirectory = Get-Location
-$sourceFile = Join-Path -Path $currentDirectory -ChildPath "resource.zip"
-# 檢查 resource.zip 是否存在，並使用消息框顯示結果
-if (-Not (Test-Path -Path $sourceFile)) {
-    [System.Windows.Forms.MessageBox]::Show("當前目錄下未找到 resource.zip 文件", "錯誤", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
-    exit
-}
 
-# 定義解壓縮目標路徑
-$zipFilePath2 = ".\resource.zip"
+# 定義目標資料夾
 $destinationFolder2 = "..\..\resource"
+
 # 檢查目標資料夾是否存在，若不存在則創建
 if (-not (Test-Path $destinationFolder2)) {
     New-Item -Path $destinationFolder2 -ItemType Directory
 }
 else {
-    # 刪除檔案，保留名為 game-icon.bmp 的檔案
+    # 刪除目標資料夾中的所有檔案，保留名為 game-icon.bmp 的檔案
     Get-ChildItem -Path $destinationFolder2 -Recurse | ForEach-Object {
         if ($_.Name -ne "game-icon.bmp") {
             try {
@@ -71,40 +65,42 @@ else {
         }
     }
 }
-# 解壓縮文件
-Expand-Archive -Path $zipFilePath2 -DestinationPath $destinationFolder2 -Force
 
 # 創建Autoexec
-& ".\install\CS2Konc_CFG_Autoexec.ps1"
+& ".\install\CS2Konc_CFG_Autoexec2.ps1"
+
+# 設定系統語言
+$systemLanguage = [System.Globalization.CultureInfo]::CurrentCulture.Name
 
 # 根據語言設置顯示不同的提示信息
 if ($systemLanguage -eq "zh-CN") {
     # 簡體中文提示
-    $finalMessage = "安装完成，请重启游戏后测试。`n`n"
+    $finalMessage = "解除安装完成，请重启游戏后测试。`n`n"
     Write-Host "$systemLanguage"
-    $verboseMessage = "安装完成"
+    $verboseMessage = "解除安装完成"
     Write-Host $verboseMessage
     # 顯示安裝的消息框（簡體中文）
-    $result = [System.Windows.Forms.MessageBox]::Show($finalMessage, "安装完成", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+    $result = [System.Windows.Forms.MessageBox]::Show($finalMessage, "解除安装完成", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
 } elseif ($systemLanguage -eq "zh-TW") {
     # 繁體中文提示
-    $finalMessage = "安裝完成，請重啟遊戲後測試。`n`n"
+    $finalMessage = "解除安裝完成，請重啟遊戲後測試。`n`n"
     Write-Host "$systemLanguage"
-    $verboseMessage = "安裝完成"
+    $verboseMessage = "解除安裝完成"
     Write-Host $verboseMessage
     # 顯示安裝的消息框（繁體中文）
-    $result = [System.Windows.Forms.MessageBox]::Show($finalMessage, "安裝完成", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+    $result = [System.Windows.Forms.MessageBox]::Show($finalMessage, "解除安裝完成", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
 } elseif ($systemLanguage -eq "en-US") {
     # 英文提示
-    $finalMessage = "install completed. Please restart the game and test. `n`n"
+    $finalMessage = "Uninstallation complete. Please restart the game and test. `n`n"
     Write-Host "$systemLanguage"
-    $verboseMessage = "install Completed"
+    $verboseMessage = "Uninstallation completed."
     Write-Host $verboseMessage
     # 顯示安裝的消息框（英文）
-    $result = [System.Windows.Forms.MessageBox]::Show($finalMessage, "install Completed", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+    $result = [System.Windows.Forms.MessageBox]::Show($finalMessage, "Uninstallation completed.", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
 } else {
     # 預設語言提示（繁體中文）
     $finalMessage = "安裝完成，請重啟遊戲後測試。`n`n"
+    Write-Host "$systemLanguage"
     $verboseMessage = "安裝完成"
     Write-Host $verboseMessage
     # 顯示安裝的消息框（預設，繁體中文）
