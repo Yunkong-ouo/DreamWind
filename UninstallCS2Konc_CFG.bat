@@ -87,5 +87,4 @@ if /I not "%CurrDirName%"=="CS2Konc_CFG" (
 
 cls
 color 0A
-REM 執行默認的 PowerShell 腳本
 call powershell.exe -ExecutionPolicy Bypass -File ".\install\CS2Konc_CFG_Uninstall_Resource.ps1"
