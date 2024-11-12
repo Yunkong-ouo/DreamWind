@@ -70,7 +70,7 @@ Drag all the files (.txt) from the `resource` folder into the CS2 `resource` fol
 
 ---
 
-<h1>Loading Methods</h1>
+<h1>💿Loading Methods</h1>
 
 **Method 1**  
 Add to the Steam launch options:
@@ -89,12 +89,19 @@ exec CS2Konc_CFG/CSKoncMod
 
 ---
 
-<h1>🖥️ Automatic Installation</h1>
+## 🖥️ Automatic Installation
 
-Double-click **InstallCS2Konc_CFG.bat** for automatic installation.
+Double-click **InstallCS2Konc_CFG.bat** for automatic installation (CS2Konc_CFG)
+
+## 🗑️ Uninstallation
+
+Double-click **UninstallCS2Konc_CFG.bat** to uninstall (CS2Konc_CFG)
 
 ## ⚙️ Related Settings
-Please modify the following files according to the documentation to update the default settings for the CFG:
+In the config folder, there are the following files:
 ```
-config\OptPreference.cfg and KeyPreference.cfg
+(KeyPreference.cfg) - Customize and modify the initial keybinding settings for the entire CFG
+(OptPreference.cfg) - Customize and modify the initial settings for the entire CFG
+(PersonalSettings.cfg) - Customize and modify personal settings
+Please modify the CFG settings according to the text instructions
 ```

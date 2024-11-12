@@ -70,7 +70,7 @@
 
 ---
 
-<h1>载入方式</h1>
+<h1>💿载入方式</h1>
 
 **方式1**  
 在 Steam 启动项中添加：
@@ -89,12 +89,19 @@ exec CS2Konc_CFG/CSKoncMod
 
 ---
 
-<h1>🖥️ 自动安装</h1>
+## 🖥️ 自动安装
 
-双击 **InstallCS2Konc_CFG.bat** 进行自动安装。
+双击 **InstallCS2Konc_CFG.bat** 进行自动安装（CS2Konc_CFG）
+
+## 🗑️ 卸载
+
+双击 **UninstallCS2Konc_CFG.bat** 卸载（CS2Konc_CFG）
 
 ## ⚙️ 相关设置
-请根据文档修改以下文件以更新 CFG 默认设置：
+在 config 文件夹里有：
 ```
-config\OptPreference.cfg 和 KeyPreference.cfg
+(KeyPreference.cfg)，自定义修改整个 CFG 初始绑定按键设置  
+(OptPreference.cfg)，自定义修改整个 CFG 初始设置  
+(PersonalSettings.cfg)，自定义修改个人设置  
+请按照文本修改 CFG 设置
 ```

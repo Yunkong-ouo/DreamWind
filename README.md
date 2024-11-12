@@ -60,7 +60,7 @@
 
 ---
 
-**文字安裝**<br>
+**📃文字安裝**<br>
 將 `resource` 文件夾內的檔案（.txt）都拖到 CS2 的 `resource` 文件夾內，預設的相對路徑為：
 ```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource
@@ -68,7 +68,7 @@
 
 ---
 
-<h1>載入方式</h1>
+<h1>💿載入方式</h1>
 
 **方式1**  
 在 Steam 啟動項中添加：
@@ -89,10 +89,17 @@ exec CS2Konc_CFG/CSKoncMod
 
 ## 🖥️ 自動安裝
 
-雙擊 **InstallCS2Konc_CFG.bat** 進行自動安裝。
+雙擊 **InstallCS2Konc_CFG.bat** 進行自動安裝（CS2Konc_CFG）
+
+## 🗑️ 解除安裝
+
+雙擊 **UninstallCS2Konc_CFG.bat** 解除安裝（CS2Konc_CFG）
 
 ## ⚙️ 相關設定
-請根據文檔修改以下檔案以更新 CFG 預設設置：
+在 config 資料夾裡有：
 ```
-config\OptPreference.cfg 和 KeyPreference.cfg
+(KeyPreference.cfg)，自定義修改整個 CFG 初始綁定按鍵設置  
+(OptPreference.cfg)，自定義修改整個 CFG 初始設置  
+(PersonalSettings.cfg)，自定義修改個人設置  
+請按照文本修改 CFG 設置 
 ```
