@@ -53,7 +53,7 @@
 **！此 CFG 會覆蓋原有設置，使用之前請先備份原先 CFG 以防意外！**
 
 ## 🚀 安裝說明
-下載並解壓縮文件，將 `CS2Konc_CFG` 資料夾整個拖到 `CFG` 資料夾，預設的相對路徑為：
+到 Releases 裡下載並解壓縮文件，將 `CS2Konc_CFG` 資料夾整個拖到 `CFG` 資料夾，預設的相對路徑為：
 ```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```

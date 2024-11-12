@@ -55,7 +55,7 @@ In most cases, using **CS2Konc-CFG** will not result in a **VAC** ban. This is m
 **! This CFG will overwrite existing settings, please back up the original CFG before use to avoid accidents!**
 
 ## 🚀 Installation Instructions
-Download and unzip the file, drag the entire `CS2Konc_CFG` folder into the `CFG` folder. The default relative path is:
+Go to the Releases Download and unzip the file, drag the entire `CS2Konc_CFG` folder into the `CFG` folder. The default relative path is:
 ```
 *Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
