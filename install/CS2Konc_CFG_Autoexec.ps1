@@ -16,11 +16,6 @@ $patterns = @(
 
 # 定義要新增的內容
 $newLines = @(
-    "joy_response_move 1",
-    "joy_side_sensitivity 1.000000",
-    "joy_forward_sensitivity 1.000000",
-    "cl_scoreboard_mouse_enable_binding +attack2",
-    "cl_quickinventory_filename radial_quickinventory.txt",
     "exec CS2Konc_CFG/CSKoncMod"
 )
 
