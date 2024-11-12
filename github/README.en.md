@@ -96,6 +96,7 @@ Double-click **InstallCS2Konc_CFG.bat** for automatic installation (CS2Konc_CFG)
 ## 🗑️ Uninstallation
 
 Double-click **UninstallCS2Konc_CFG.bat** to uninstall (CS2Konc_CFG)
+<br>Then enter the game and reset the keys twice.
 
 ## ⚙️ Related Settings
 In the config folder, there are the following files:

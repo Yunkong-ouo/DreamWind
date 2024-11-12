@@ -94,6 +94,7 @@ exec CS2Konc_CFG/CSKoncMod
 ## 🗑️ 解除安裝
 
 雙擊 **UninstallCS2Konc_CFG.bat** 解除安裝（CS2Konc_CFG）
+<br>然後進到遊戲裡重製按鍵2次
 
 ## ⚙️ 相關設定
 在 config 資料夾裡有：

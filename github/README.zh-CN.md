@@ -96,6 +96,7 @@ exec CS2Konc_CFG/CSKoncMod
 ## 🗑️ 卸载
 
 双击 **UninstallCS2Konc_CFG.bat** 卸载（CS2Konc_CFG）
+<br>然后进到游戏里重制按键2次
 
 ## ⚙️ 相关设置
 在 config 文件夹里有：

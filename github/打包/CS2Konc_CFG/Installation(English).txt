@@ -46,6 +46,7 @@ Please modify the CFG settings according to the text
 
 【Uninstall】
 Double-click UninstallCS2Konc_CFG.bat to uninstall (CS2Konc_CFG)
+Then enter the game and reset the keys twice.
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
