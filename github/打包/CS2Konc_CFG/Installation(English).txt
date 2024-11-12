@@ -36,7 +36,16 @@ Example path:
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 【CFG Settings】
-Modify config/OptPreference.cfg and KeyPreference.cfg according to the documentation.
+In the config folder, there are:
+(KeyPreference.cfg) to customize and modify the initial key binding settings of the entire CFG
+(OptPreference.cfg) to customize and modify the initial settings of the entire CFG
+(PersonalSettings.cfg) to customize and modify personal settings
+Please modify the CFG settings according to the text
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+【Uninstall】
+Double-click UninstallCS2Konc_CFG.bat to uninstall (CS2Konc_CFG)
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
