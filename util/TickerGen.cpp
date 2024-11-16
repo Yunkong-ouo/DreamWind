@@ -238,14 +238,14 @@ void generateFiles(const string &folderName, const string &tickerName, const str
 		}
 		cout << "\"";
 
-		cout << "\nalias " << tickerContentName << "tmpts " << "\"echoln New Beginning " << tickerContentName << "\"\n";
+		cout << "\n\nalias " << tickerContentName << "tmpts " << "\"echoln New Beginning " << tickerContentName << "\"\n\n";
 
 		foru(i, 1, fileCount)
 		{
 			cout << "alias " << tickerContentName << i << "_Begin \"" << tickerContentName << "_Clear; alias " << tickerContentName << i << " " << tickerContentName << "; " << tickerContentName << "tmpts\"\n";
 		}
 
-		cout << "\nexec_async " << utilPath << "/" << folderName << "/" << tickerName << "Setup\n";
+		cout << "\nexec " << utilPath << "/" << folderName << "/" << tickerName << "Setup\n";
 		fflush(stdout);
 		freopen("CON", "w", stdout); // 将输出重定向回控制台
 	}
