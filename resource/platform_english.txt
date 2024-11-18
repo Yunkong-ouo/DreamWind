@@ -59,7 +59,7 @@
 
     "WashFrequencySettings"         "Wash Frequency Settings \n \n \n \n"
     "WashFrequencyDocumentNB"       "Switch to NB Document \n \n \n \n"
-    "WashFrequencyDocumentHF"       "Switch to HF Document \n \n \n \n"
+    "WashFrequencyDocumentWT"       "Switch to WT Document \n \n \n \n"
     "WashFrequencyDocumentEZ"       "Switch to EZ Document \n \n \n \n"
     "WashFrequencySpeedFast"        "Wash Frequency Speed Fast \n \n \n \n"
     "WashFrequencySpeedMedium"      "Wash Frequency Speed Medium \n \n \n \n"

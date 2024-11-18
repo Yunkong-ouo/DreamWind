@@ -59,7 +59,7 @@
 
     "WashFrequencySettings"         "洗頻設置 \n \n \n \n"
     "WashFrequencyDocumentNB"       "切換到NB文本 \n \n \n \n"
-    "WashFrequencyDocumentHF"       "切換到HF文本 \n \n \n \n"
+    "WashFrequencyDocumentWT"       "切換到WT文本 \n \n \n \n"
     "WashFrequencyDocumentEZ"       "切換到EZ文本 \n \n \n \n"
     "WashFrequencySpeedFast"        "洗頻速度快 \n \n \n \n"
     "WashFrequencySpeedMedium"      "洗頻速度中 \n \n \n \n"
