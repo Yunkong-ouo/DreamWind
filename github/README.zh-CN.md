@@ -97,6 +97,10 @@ exec CS2Konc_CFG/CSKoncMod
 
 双击 **UninstallCS2Konc_CFG.bat** 卸载（CS2Konc_CFG）
 <br>然后进到游戏里重制按键2次
+或打
+```
+bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
+```
 
 ## ⚙️ 相关设置
 在 config 文件夹里有：

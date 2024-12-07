@@ -97,6 +97,10 @@ Double-click **InstallCS2Konc_CFG.bat** for automatic installation (CS2Konc_CFG)
 
 Double-click **UninstallCS2Konc_CFG.bat** to uninstall (CS2Konc_CFG)
 <br>Then enter the game and reset the keys twice.
+OR
+```
+bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
+```
 
 ## ⚙️ Related Settings
 In the config folder, there are the following files:
