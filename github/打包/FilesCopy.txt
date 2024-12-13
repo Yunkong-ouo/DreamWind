@@ -1,0 +1,13 @@
+config
+event
+gui
+modules
+resets
+resource
+util
+CS2Konc正版驗證.certx
+CS2KoncMod.cfg
+CSKoncModF.cfg
+UninstallCS2Konc_CFG.bat
+InstallCS2Konc_CFG.bat
+轉動視角計算.bat
