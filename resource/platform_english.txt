@@ -42,6 +42,9 @@
     "BhopON"                        "Space Bhop ON \n \n \n \n"
     "BhopOFF"                       "Space Bhop OFF \n \n \n \n"
 
+    "RapidFireON"                   "Rapid Fire ON \n \n \n \n"
+    "RapidFireOFF"                  "Rapid Fire OFF \n \n \n \n"
+
     "AutoStopFull"                  "Auto Stop Full \n \n \n \n"
     "AutoStopSingle"                "Auto Stop Single \n \n \n \n"
     "AutoStopDouble"                "Auto Stop Double \n \n \n \n"

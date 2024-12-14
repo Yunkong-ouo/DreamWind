@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "運行 InstallCS2Konc_CFG2.bat",
+      "label": "DevInstall",
       "type": "shell",
-      "command": "./InstallCS2Konc_CFG2.bat",
+      "command": "./DevInstall.bat",
       "group": {
         "kind": "build",
         "isDefault": true

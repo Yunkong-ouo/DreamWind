@@ -19,94 +19,85 @@
     </a>
 </p>
 
-## 💼 Introduction to CS2Konc-CFG
-**CS2Konc-CFG** is a lightweight CS2 CFG project that integrates some common features while providing powerful customization options. Using an in-game wheel menu, 🚀 players can visually access the features of **CS2Konc-CFG** during gameplay.
-
-**CS2Konc-CFG** is primarily designed for lightweight performance, with all features operable under `sv_cheats 0`, and includes a practice mode that runs under `sv_cheats 1`, allowing players to quickly familiarize themselves with maps and items, also accessible in a visual manner. 
-
-In most cases, using **CS2Konc-CFG** will not result in a **VAC** ban. This is merely a CFG project. Officially provided features 👍
+## 💼 CS2Konc-CFG Introduction
+**CS2Konc-CFG** is a lightweight CS2 CFG project that integrates common features while providing powerful customization options. Using the in-game wheel menu, 🚀 players can visually access the functions of **CS2Konc-CFG** within the game.  
+**CS2Konc-CFG** is designed with a focus on being lightweight while maintaining full functionality, which can operate under `sv_cheats 0`. It also includes a training mode that works with `sv_cheats 1`, allowing players to quickly familiarize themselves with maps and items, again with a visual interface for access.  
+In most cases, using **CS2Konc-CFG** will not result in a **VAC** ban. This is simply a CFG project with official functionalities provided. 👍
 
 ## ✨ Features
-- 🔥 Quick configuration
+- 🔥 Fast configuration
 - 💤 Simple interface
-- 📦 Preloaded plugins
+- 📦 Preconfigured plugins
 - 🧹 Elegant design
 - 🚀 Lightning fast
 
-## 📝 Feature Description
-| Name                      | Description                             |
-|-------------------------  |------------------------------------------|
-| Auto Stop                 | Quickly decrease speed using WASD
-| Jump Throw Binding        | Automatically throw with WASD direction or without direction
-| Space Big Jump            | Automatically perform a big jump when pressing the space key
-| Shoot to Cancel Unpacking | When you press the fire button, it automatically cancels unpacking; release to continue unpacking.
-| Wheel Item Switching      | Saves key presses; just hold the bound key to bring up the wheel, and tapping can also switch items
-| Quick Sniper Switching    | Quickly switch weapons by pressing Q
-| Auto Frequency Wash       | Internal key wash frequency text, type faster than others
-| Custom Text Output        | Output in close/control/team/all/switch CFG
-| Crosshair Utility Functions    | Functions related to crosshair tracking
-| Scroll Wheel Utility Functions | Convenient settings for scroll wheel settings, can also customize scroll wheel settings
-| Practice Mode             | One-click setting for practice mode, can also customize related functions
-| Auto Bhop                 | Press the spacebar to jump automatically  
-| Mini-map Zoom with Walk   | Automatically zooms the mini-map when walking quietly
-| Reset CFG Flash Reminder  | Changing interface color when you reset CFG, reminding you of the CFG reset
+## 📝 Feature Introduction
+| Name                       | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Auto Stop (Deprecated)     | WASD can quickly decrease speed.
+| Throw Bindings             | Automatic throwing with WASD directions and no-direction throws.
+| Space Jump                 | Automatically jump when pressing the space key.
+| Cancel Plant on Fire       | Cancels planting when you press the fire key, resuming planting after release.
+| Wheel Item Switch          | Save key presses by holding the assigned key to open the wheel; pressing switches items.
+| Sniper Quick Switch        | Quickly switch to the sniper by pressing Q.
+| Auto Clean Frequency       | Built-in frequency cleaning text, type faster.
+| Custom Text Output         | Output to Close/Console/Team/All/Switch CFG.
+| Crosshair Utility          | Features related to crosshair follow.
+| Wheel Utility              | Convenient settings for the scroll wheel, and customization options.
+| Training Mode (Deprecated) | One-click to set up training mode with customizable features.
+| Auto Jump                  | Automatically jump when pressing the space key.
+| Crouch Zoom Mini-map       | Automatically zoom in and out when crouching.
+| Reset CFG Flash Reminder   | Interface color change reminder when resetting CFG.
+| Quick Fire with Handgun    | Hold fire after picking up a pistol to shoot quickly, R8 automatically cancels.
 
-## 🔥 Special Note
-**! This CFG will overwrite existing settings, please back up the original CFG before use to avoid accidents!**
+## 🔥 Special Notes
+**! This CFG will overwrite existing settings, please backup your original CFG before use to avoid issues!**
 
-## 🚀 Installation Instructions
-Go to the Releases Download and unzip the file, drag the entire `CS2Konc_CFG` folder into the `CFG` folder. The default relative path is:
+## 🚀 Installation Guide
+Download and extract the files from the Releases section, then drag the entire `CS2Konc_CFG` folder into the `CFG` folder. The default relative path is:
 ```
-*Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
+*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
-
+---
+**📃 Text Installation**
+Drag the files in the `resource` folder (with .txt extension) into CS2's `resource` folder. The default relative path is:
+```
+*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource
+```
 ---
 
-**Text Installation**<br>
-Drag all the files (.txt) from the `resource` folder into the CS2 `resource` folder. The default relative path is:
-```
-*Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource
-```
-
----
-
-<h1>💿Loading Methods</h1>
-
+## 💿 Loading Method
 **Method 1**  
-Add to the Steam launch options:
+Add the following in the Steam launch options:
 ```
 +exec CS2Konc_CFG/CSKoncMod
 ```
-
 ---
-
 **Method 2**  
-Create a file named `autoexec.cfg` in the `Counter-Strike Global Offensive\game\csgo\cfg` folder, and the content should be:
+Create a file named `autoexec.cfg` in the `Counter-Strike Global Offensive\game\csgo\cfg` folder with the content:
 ```
 exec CS2Konc_CFG/CSKoncMod
 ```
-### **Recommended to use the autoexec.cfg method**
+<h1><b>Recommended to use autoexec.cfg method</b></h1>
 
 ---
 
-## 🖥️ Automatic Installation
-
-Double-click **InstallCS2Konc_CFG.bat** for automatic installation (CS2Konc_CFG)
-
-## 🗑️ Uninstallation
-
-Double-click **UninstallCS2Konc_CFG.bat** to uninstall (CS2Konc_CFG)
-<br>Then enter the game and reset the keys twice.
-OR
+## 🖥️ Auto Install
+Double-click **InstallCS2Konc_CFG.bat** to automatically install **CS2Konc_CFG**.
+## 🗑️ Uninstall
+Double-click **UninstallCS2Konc_CFG.bat** to uninstall **CS2Konc_CFG**.  
+Then, reset the keys in the game twice, or type the following:
 ```
 bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
 ```
+---
 
 ## ⚙️ Related Settings
-In the config folder, there are the following files:
+In the config folder, there are the following:
 ```
-(KeyPreference.cfg) - Customize and modify the initial keybinding settings for the entire CFG
-(OptPreference.cfg) - Customize and modify the initial settings for the entire CFG
-(PersonalSettings.cfg) - Customize and modify personal settings
-Please modify the CFG settings according to the text instructions
+(KeyPreference.cfg) - Customize the initial key binding setup for the entire CFG.
+(OptPreference.cfg) - Customize the initial settings for the entire CFG.
+(PersonalSettings.cfg) - Customize personal settings.
+Please modify the CFG settings as per the text files.
 ```
+---

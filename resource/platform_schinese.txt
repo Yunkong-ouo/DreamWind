@@ -42,6 +42,9 @@
     "BhopON"                        "开启空格连跳 \n \n \n \n"
     "BhopOFF"                       "关闭空格连跳 \n \n \n \n"
 
+    "RapidFireON"                   "开启手枪快速射击 \n \n \n \n"
+    "RapidFireOFF"                  "关闭手枪快速射击 \n \n \n \n"
+
     "AutoStopFull"                  "全向急停 \n \n \n \n"
     "AutoStopSingle"                "单键急停 \n \n \n \n"
     "AutoStopDouble"                "双键急停 \n \n \n \n"
