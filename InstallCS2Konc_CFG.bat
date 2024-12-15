@@ -41,17 +41,6 @@ if "%Lang%"=="TraditionalChinese" (
 )
 timeout /t 1 >nul
 
-REM 顯示退出提示並等待用戶輸入
-REM echo.
-REM if "%Lang%"=="TraditionalChinese" (
-REM     echo.請按任意鍵退出。
-REM ) else if "%Lang%"=="SimplifiedChinese" (
-REM     echo.请按任意键退出。
-REM ) else (
-REM     echo.Press any key to exit.
-REM )
-REM pause >nul
-
 REM 檢查是否在 CS2Konc_CFG 資料夾中
 for %%I in (.) do set CurrDirName=%%~nxI
 if /I not "%CurrDirName%"=="CS2Konc_CFG" (

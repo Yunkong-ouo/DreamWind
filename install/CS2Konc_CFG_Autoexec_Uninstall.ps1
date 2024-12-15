@@ -1,3 +1,8 @@
+﻿# 設置控制台編碼為 UTF-8 BOM
+$OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding($true)
+
+# 獲取當前目錄
+$currentDirectory = Get-Location
 # 設定文件路徑和新內容
 $autoexecPath = Join-Path -Path $currentDirectory -ChildPath "..\autoexec.cfg"
 
@@ -33,12 +38,13 @@ if (Test-Path $autoexecPath) {
         $existingContent = $existingContent | Where-Object { $_ -notmatch $pattern }
     }
 
-    # 將新內容追加到現有內容的最後
+    # 合併現有內容和新的內容
     $newContent = $existingContent + $newLines
 
-    # 寫回文件
+    # 寫回文件，將新內容寫到最後
     Set-Content -Path $autoexecPath -Value $newContent -Force
-} else {
+}
+else {
     # 如果文件不存在，直接寫入新內容
     Set-Content -Path $autoexecPath -Value $newLines -Force
 }
