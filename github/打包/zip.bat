@@ -3,7 +3,7 @@ chcp 65001 >nul 2>&1
 cls
 color 0a
 
-set zipFile=CS2Konc_CFG.Zip
+set zipFile=CS2Konc_CFG.zip
 REM set zipFile=CS2Konc_CFG.7z
 set folderToZip=CS2Konc_CFG
 
