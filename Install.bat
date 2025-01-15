@@ -1,0 +1,238 @@
+@echo off
+chcp 65001 >nul 2>&1
+color 0a
+mode con: cols=80 lines=25
+setlocal enabledelayedexpansion
+
+REM 檢查 64 位系統路徑
+if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
+
+REM 確認是否有管理員權限
+bcdedit >nul
+if '%errorlevel%' NEQ '0' (
+    goto UACPrompt
+) else (
+    goto UACAdmin
+)
+:UACPrompt
+%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
+exit /B
+:UACAdmin
+cd /d "%~dp0"
+
+REM 取得系統語言設置（從註冊表中獲取）
+for /f "tokens=3" %%a in ('reg query "HKCU\Control Panel\International" /v LocaleName') do set SystemLanguage=%%a
+
+REM 根據系統語言設置 Lang 變數
+set Lang=TraditionalChinese
+if /I "%SystemLanguage%"=="zh-TW" (
+    set Lang=TraditionalChinese
+) else if /I "%SystemLanguage%"=="zh-CN" (
+    set Lang=SimplifiedChinese
+) else if /I "%SystemLanguage%"=="en-US" (
+    set Lang=English
+)
+
+REM 根據語言選擇顯示訊息
+if "%Lang%"=="TraditionalChinese" (
+    echo 當前語言是繁體中文。
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 当前语言是简体中文。
+) else (
+    echo The current language is English.
+)
+timeout /t 1 >nul
+
+echo.
+
+REM 檢查是否在 %NAME% 資料夾中
+set "NAME=CS2Konc_CFG"
+for %%I in (.) do set CurrDirName=%%~nxI
+if /I not "%CurrDirName%"=="!NAME!" (
+    cls
+    color 0C
+    if "%Lang%"=="TraditionalChinese" (
+        echo 請把此資料夾放進 %NAME% 資料夾中!!!
+        echo 請把此資料夾放進 %NAME% 資料夾中!!!
+        echo 請把此資料夾放進 %NAME% 資料夾中!!!
+        echo 請確保此資料夾在 *\Counter-Strike Global Offensive\game\csgo\cfg\%NAME% 目錄當中
+    ) else if "%Lang%"=="SimplifiedChinese" (
+        echo 请把此文件夹放进 %NAME% 文件夹中!!!
+        echo 请把此文件夹放进 %NAME% 文件夹中!!!
+        echo 请把此文件夹放进 %NAME% 文件夹中!!!
+        echo 请确保此文件夹在 *\Counter-Strike Global Offensive\game\csgo\cfg\%NAME% 目录當中
+    ) else (
+        echo Please place this folder into the %NAME% folder!!!
+        echo Please place this folder into the %NAME% folder!!!
+        echo Please place this folder into the %NAME% folder!!!
+        echo Please make sure this folder is in the *\Counter-Strike Global Offensive\game\csgo\cfg\%NAME% directory.
+    )
+    echo.
+    if "%Lang%"=="TraditionalChinese" (
+        echo.請按任意鍵退出。
+    ) else if "%Lang%"=="SimplifiedChinese" (
+        echo.请按任意键退出。
+    ) else (
+        echo. Press any key to exit.
+    )
+    pause >nul
+    exit /b
+)
+
+REM 檢測放置位置
+cd /d %~dp0
+cd ../../
+set "EXPECTED_FOLDER_NAME=csgo"
+for %%F in (.) do set "CURRENT_FOLDER_NAME=%%~nxF"
+if "%Lang%"=="TraditionalChinese" (
+    echo 當前資料夾名稱: %CURRENT_FOLDER_NAME%
+    echo 預期資料夾名稱: %EXPECTED_FOLDER_NAME%
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 当前文件夹名称: %CURRENT_FOLDER_NAME%
+    echo 预期文件夹名称: %EXPECTED_FOLDER_NAME%
+) else (
+    echo Current folder name: %CURRENT_FOLDER_NAME%
+    echo Expected folder name: %EXPECTED_FOLDER_NAME%
+)
+if /I "%CURRENT_FOLDER_NAME%" neq "%EXPECTED_FOLDER_NAME%" (
+    cls
+    color 0C
+    if "%Lang%"=="TraditionalChinese" (
+        echo 您的 %NAME% 放置位置錯誤!!!，請重看使用說明
+        echo 您的 %NAME% 放置位置錯誤!!!，請重看使用說明
+        echo 您的 %NAME% 放置位置錯誤!!!，請重看使用說明
+        echo 請確保此資料夾放在 *\Counter-Strike Global Offensive\game\csgo\cfg 目錄當中
+    ) else if "%Lang%"=="SimplifiedChinese" (
+        echo 您的 %NAME% 放置位置错误!!!，请重看使用说明
+        echo 您的 %NAME% 放置位置错误!!!，请重看使用说明
+        echo 您的 %NAME% 放置位置错误!!!，请重看使用说明
+        echo 请确保此文件夹放在 *\Counter-Strike Global Offensive\game\csgo\cfg 目录当中
+    ) else (
+        echo Your %NAME% placement is incorrect!!! Please refer to the instructions again.
+        echo Your %NAME% placement is incorrect!!! Please refer to the instructions again.
+        echo Your %NAME% placement is incorrect!!! Please refer to the instructions again.
+        echo Please make sure this folder is placed in the *\Counter-Strike Global Offensive\game\csgo\cfg directory.
+    )
+    echo.
+    if "%Lang%"=="TraditionalChinese" (
+        echo.請按任意鍵退出。
+    ) else if "%Lang%"=="SimplifiedChinese" (
+        echo.请按任意键退出。
+    ) else (
+        echo. Press any key to exit.
+    )
+    pause >nul
+    exit /b
+)
+
+echo.
+
+REM 新增檔案複製操作
+if "%Lang%"=="TraditionalChinese" (
+    echo 正在複製檔案...
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 正在复制文件...
+) else (
+    echo Copying file...
+)
+
+xcopy "%~dp0resource" "%~dp0..\..\resource\" /Y /E >nul 2>&1
+
+if "%Lang%"=="TraditionalChinese" (
+    echo 複製完成！
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 文件复制完成！
+) else (
+    echo File copied successfully!
+)
+
+cd "%~dp0.."
+
+echo.
+
+REM 設置要檢查的行
+set "ADDITIONAL_CONTENT=joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt"
+set "EXEC_COMMAND=CS2Konc_CFG/CSKoncMod"
+
+REM 設置 autoexec.cfg 文件路徑
+set "AUTOEXEC_FILE=autoexec.cfg"
+
+REM 檢查 autoexec.cfg 文件是否存在
+if not exist "%AUTOEXEC_FILE%" (
+    if "%Lang%"=="TraditionalChinese" (
+        echo %AUTOEXEC_FILE% 不存在。正在建立...
+    ) else if "%Lang%"=="SimplifiedChinese" (
+        echo %AUTOEXEC_FILE% 不存在。正在建立...
+    ) else (
+        echo %AUTOEXEC_FILE% does not exist. Creating it...
+    )
+    type nul > "%AUTOEXEC_FILE%"
+)
+
+REM 检查文件中是否包含 ADDITIONAL_CONTENT
+findstr /i "%ADDITIONAL_CONTENT%" "%AUTOEXEC_FILE%" >nul
+if %errorlevel% neq 0 (
+    REM 如果没有找到该行内容，什么也不做
+) else (
+    REM 如果找到，删除该行
+    findstr /v /i "%ADDITIONAL_CONTENT%" "%AUTOEXEC_FILE%" > "%AUTOEXEC_FILE%.tmp" 2>nul
+    move /Y "%AUTOEXEC_FILE%.tmp" "%AUTOEXEC_FILE%" >nul 2>&1
+)
+
+REM 取得文件的最後一行
+set "LAST_LINE="
+for /f "tokens=* delims=" %%A in ('type "%AUTOEXEC_FILE%" ^| findstr /r /n ".*"') do (
+    set "LAST_LINE=%%A"
+)
+REM 提取文件最後一行內容
+for /f "tokens=2 delims=:" %%B in ("!LAST_LINE!") do set "LAST_LINE_CONTENT=%%B"
+REM 輸出最後一行內容，用於除錯
+if "%Lang%"=="TraditionalChinese" (
+    echo 最後一行內容: !LAST_LINE_CONTENT!
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 最后一行内容: !LAST_LINE_CONTENT!
+) else (
+    echo The last line content: !LAST_LINE_CONTENT!
+)
+
+REM 檢查最後一行是否為 "%EXEC_COMMAND%"
+if /i not "!LAST_LINE_CONTENT!"=="!EXEC_COMMAND!" (
+    if /i not "!LAST_LINE_CONTENT!"=="!EXEC_COMMAND! " (
+        if "%Lang%"=="TraditionalChinese" (
+            echo 最後一行不是 "%EXEC_COMMAND%"。正在新增到文件...
+        ) else if "%Lang%"=="SimplifiedChinese" (
+            echo 最后一行不是 "%EXEC_COMMAND%"。正在新增到文件...
+        ) else (
+            echo The last line is not "%EXEC_COMMAND%". Adding it to the file...
+        )
+        echo.  >> "%AUTOEXEC_FILE%" 
+        echo %EXEC_COMMAND% >> "%AUTOEXEC_FILE%"
+    ) else (
+        if "%Lang%"=="TraditionalChinese" (
+            echo 最後一行已經是 "%EXEC_COMMAND%"。未進行修改。
+        ) else if "%Lang%"=="SimplifiedChinese" (
+            echo 最后一行已经是 "%EXEC_COMMAND%"。未进行修改。
+        ) else (
+            echo The last line is already "%EXEC_COMMAND%". No changes made.
+        )
+    )
+)
+
+echo.
+
+if "%Lang%"=="TraditionalChinese" (
+    echo 安裝完成。
+    echo.
+    echo 請按任意鍵退出。
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 安装完成。
+    echo.
+    echo 请按任意键退出。
+) else (
+    echo Installation completed.
+    echo.
+    echo Press any key to exit.
+)
+
+pause >nul
+exit /b

@@ -1,5 +1,8 @@
 @echo off
 chcp 65001 >nul 2>&1
+color 0a
+mode con: cols=80 lines=25
+setlocal enabledelayedexpansion
 
 REM 檢查 64 位系統路徑
 if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
@@ -17,12 +20,11 @@ exit /B
 :UACAdmin
 cd /d "%~dp0"
 
-REM 設定語言變數
-setlocal enabledelayedexpansion
-REM 預設語言為繁體中文
-set Lang=TraditionalChinese
+REM 取得系統語言設置（從註冊表中獲取）
+for /f "tokens=3" %%a in ('reg query "HKCU\Control Panel\International" /v LocaleName') do set SystemLanguage=%%a
 
 REM 根據系統語言設置 Lang 變數
+set Lang=TraditionalChinese
 if /I "%SystemLanguage%"=="zh-TW" (
     set Lang=TraditionalChinese
 ) else if /I "%SystemLanguage%"=="zh-CN" (
@@ -40,6 +42,8 @@ if "%Lang%"=="TraditionalChinese" (
     echo The current language is English.
 )
 timeout /t 1 >nul
+
+echo.
 
 REM 檢查是否在 CS2Konc_CFG 資料夾中
 for %%I in (.) do set CurrDirName=%%~nxI
@@ -120,8 +124,84 @@ if /I "%CURRENT_FOLDER_NAME%" neq "%EXPECTED_FOLDER_NAME%" (
     exit /b
 )
 
-cd ./cfg/CS2Konc_CFG/
+echo.
 
-cls
-color 0A
-call powershell.exe -ExecutionPolicy Bypass -File ".\install\CS2Konc_CFG_Uninstall_Resource.ps1"
+REM 解除安裝操作
+if "%Lang%"=="TraditionalChinese" (
+    echo 正在解除安裝...
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 正在卸载...
+) else (
+    echo Uninstalling...
+)
+
+REM 設置資源目錄路徑
+set "RESOURCE_DIR=%~dp0..\..\resource"
+
+REM 刪除資料夾內的所有文件，但保留 game-icon.bmp
+for /r "%RESOURCE_DIR%" %%F in (*) do (
+    if /i not "%%~nxF"=="game-icon.bmp" (
+        del /f /q "%%F"
+    )
+)
+
+cd "%~dp0.."
+
+REM 設置要檢查的行
+set "EXEC_COMMAND=CS2Konc_CFG/CSKoncMod"
+set "AUTOEXEC_FILE=autoexec.cfg"
+
+REM 設置要新增的內容，將所有命令合併為一行
+set "ADDITIONAL_CONTENT=joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt"
+
+REM 檢查 autoexec.cfg 文件是否存在
+if not exist "%AUTOEXEC_FILE%" (
+    if "%Lang%"=="TraditionalChinese" (
+        echo %AUTOEXEC_FILE% 不存在。正在建立...
+    ) else if "%Lang%"=="SimplifiedChinese" (
+        echo %AUTOEXEC_FILE% 不存在。正在建立...
+    ) else (
+        echo %AUTOEXEC_FILE% does not exist. Creating it...
+    )
+    type nul > "%AUTOEXEC_FILE%"
+)
+
+REM 檢查文件中是否包含 "%EXEC_COMMAND%"
+findstr /i "%EXEC_COMMAND%" "%AUTOEXEC_FILE%" >nul
+if %errorlevel% neq 0 (
+    REM 如果找不到 "%EXEC_COMMAND%"，則不做任何操作
+) else (
+    REM 刪除文件中所有包含 "%EXEC_COMMAND%" 的行
+    findstr /v /i "%EXEC_COMMAND%" "%AUTOEXEC_FILE%" > "%AUTOEXEC_FILE%.tmp" 2>nul
+    move /Y "%AUTOEXEC_FILE%.tmp" "%AUTOEXEC_FILE%" >nul 2>&1
+)
+
+REM 檢查文件中是否包含 ADDITIONAL_CONTENT
+findstr /i "%ADDITIONAL_CONTENT%" "%AUTOEXEC_FILE%" >nul
+if %errorlevel% neq 0 (
+    REM 刪除文件中所有包含 "%ADDITIONAL_CONTENT%" 的行
+    findstr /v /i "%ADDITIONAL_CONTENT%" "%AUTOEXEC_FILE%" > "%AUTOEXEC_FILE%.tmp" 2>nul
+    move /Y "%AUTOEXEC_FILE%.tmp" "%AUTOEXEC_FILE%" >nul 2>&1
+    echo %ADDITIONAL_CONTENT% >> "%AUTOEXEC_FILE%"
+) else (
+    REM 如果已經存在，則不進行操作
+)
+
+echo.
+
+if "%Lang%"=="TraditionalChinese" (
+    echo 解除安裝完畢。
+    echo.
+    echo 請按任意鍵退出
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 卸载完成。
+    echo.
+    echo 请按任意键退出。
+) else (
+    echo Uninstallation completed.
+    echo.
+    echo Press any key to exit.
+)
+
+pause >nul
+exit /b
