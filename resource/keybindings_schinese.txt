@@ -18,10 +18,14 @@
     "ConfigurationSettings"         "CFG设置 \n \n \n \n"
 
     "MouseWheelJumpSettings"        "滚轮跳设置 \n \n \n \n"
-    "WheelJumpUp"                   "向上滚轮跳 \n \n \n \n"
-    "WheelJumpDown"                 "向下滚轮跳 \n \n \n \n"
-    "WheelJumpBoth"                 "上下滚轮跳 \n \n \n \n"
-    "CustomizeWheelJump"            "自定义滚轮跳 \n \n \n \n"
+    "WheelUpJump"                   "向上滚轮跳 \n \n \n \n"
+    "WheelUpSwitch"                 "向上滚轮切换武器 \n \n \n \n"
+    "WheelUpCustomize"              "向上滚轮自定义 \n \n \n \n"
+    "WheelUpNone"                   "向上滚轮无动作 \n \n \n \n"
+    "WheelDownJump"                 "向下滚轮跳 \n \n \n \n"
+    "WheelDownSwitch"               "向下滚轮切换武器 \n \n \n \n"
+    "WheelDownCustomize"            "向下滚轮自定义 \n \n \n \n"
+    "WheelDownNone"                 "向下滚轮无动作 \n \n \n \n"
 
     "CrosshairFollowSettings"       "准星跟随设置 \n \n \n \n"
     "CrosshairFollowON"             "开启准星跟随 \n \n \n \n"

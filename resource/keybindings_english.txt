@@ -18,10 +18,14 @@
     "ConfigurationSettings"         "Configuration Settings \n \n \n \n"
 
     "MouseWheelJumpSettings"        "Mouse Wheel Jump Settings \n \n \n \n"
-    "WheelJumpUp"                   "Wheel Jump Up \n \n \n \n"
-    "WheelJumpDown"                 "Wheel Jump Down \n \n \n \n"
-    "WheelJumpBoth"                 "Wheel Jump Both \n \n \n \n"
-    "CustomizeWheelJump"            "Customize Wheel Jump \n \n \n \n"
+    "WheelUpJump"                   "WheelUpJump \n \n \n \n"
+    "WheelUpSwitch"                 "WheelUpSwitch \n \n \n \n"
+    "WheelUpCustomize"              "WheelUpCustomize \n \n \n \n"
+    "WheelUpNone"                   "WheelUpNone \n \n \n \n"
+    "WheelDownJump"                 "WheelDownJump \n \n \n \n"
+    "WheelDownSwitch"               "WheelDownSwitch \n \n \n \n"
+    "WheelDownCustomize"            "WheelDownCustomize \n \n \n \n"
+    "WheelDownNone"                 "WheelDownNone \n \n \n \n"
 
     "CrosshairFollowSettings"       "Crosshair Follow Settings \n \n \n \n"
     "CrosshairFollowON"             "Crosshair Follow ON \n \n \n \n"
