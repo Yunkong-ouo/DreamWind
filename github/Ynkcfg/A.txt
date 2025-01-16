@@ -1,0 +1,55 @@
+///道具轮盘
+
+cl_quickinventory_filename "lunpan.txt"
+
+alias +_utility "+quickinv"
+alias -_utility "-quickinv"
+
+alias +_lastinv "slot2;slot1"
+
+alias +attack_0 "-attack;-attack2"
+
+alias +attack_FIR0 "bind MOUSE1 +shootr;bind MOUSE2 +attack2_SR"
+alias +attack_FIR1 "bind MOUSE1 +FIR1;bind MOUSE2 +FIR2"
+
+alias +FIR1 "+attack;bind MOUSE1 +FIR_1"
+alias -FIR1 "-attack"
+alias +FIR_1 "+attack"
+alias -FIR_1 "-attack;-attack2;+attack_FIR0;+_lastinv"
+
+alias +FIR2 "+attack2;bind MOUSE2 +FIR_2"
+alias -FIR2 "-attack2"
+alias +FIR_2 "+attack2"
+alias -FIR_2 "-attack;-attack2;+attack_FIR0;+_lastinv"
+
+bind 6 "+_utility;+attack_FIR1" // 道具轮盘
+
+// 道具欄設定
+bind 4 "slot4; +attack_0; rapid_fire_locked; +attack_FIR1" // 切換道具
+bind 7 "slot7; +attack_0; rapid_fire_locked; +attack_FIR1" // 閃光彈
+bind 8 "slot8; +attack_0; rapid_fire_locked; +attack_FIR1" // 煙霧彈
+bind 9 "slot9; +attack_0; rapid_fire_locked; +attack_FIR1" // 誘餌彈
+bind 0 "slot10; +attack_0; rapid_fire_locked; +attack_FIR1" // 燃燒彈
+
+///物品栏
+bind 1 "slot1; +attack_0; rapid_fire_locked; +attack_FIR0" // 主武器
+bind 2 "slot2; +attack_0; rapid_fire_locked; +attack_FIR0" // 副武器
+bind 3 "slot3; +attack_0; rapid_fire_locked; +attack_FIR0" // 刀
+bind 5 "slot5; +attack_0; rapid_fire_locked; +attack_FIR0" // C4
+
+// 其他功能設定
+bind escape "cancelselect; +attack_FIR0"
+bind g "drop; +attack_FIR0"
+bind q "lastinv; +attack_0; +attack_FIR0"
+
+// 跳投
+alias "+throwaction" "-attack;-attack2"
+
+alias +jp "+jump"
+alias -jp "-jump"
+bind v "+jp;+throwaction;+attack_FIR0;+_lastinv"
+
+// 跑投
+alias +runthrow "+forward;+jump"
+alias -runthrow "-jump;-forward"
+bind h "+runthrow;+throwaction;+attack_FIR0;+_lastinv"
