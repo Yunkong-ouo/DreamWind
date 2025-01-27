@@ -1,0 +1,39 @@
+MIT License
+
+版權所有 (c) 2025 Yunkong（及所有隨後的年份）
+
+許可條款：
+特此免費授予任何人使用、複製、修改、合併、發佈、分發、再授權及/或銷售本軟體的副本，並允許提供本軟體的人依照以下條件進行操作：
+
+條件：
+1. 上述版權聲明和本授權許可聲明必須包含在所有副本或本軟體的重要部分中。
+
+本軟體按「現狀」提供，不提供任何明示或暗示的保證，包括但不限於對適銷性、特定用途適用性和不侵權的保證。在任何情況下，作者或版權擁有者均不對因使用本軟體或與本軟體有關的行為所引起的任何索賠、損害或其他責任承擔責任，無論這些責任是否源自合約、侵權行為或其他原因。
+
+---
+
+MIT 授权条款
+
+版权所有 (c) 2025 Yunkong（以及所有随后的年份）
+
+许可条款：
+特此免费授予任何人使用、复制、修改、合并、发布、分发、再授权及/或销售本软件的副本，并允许提供本软件的人依照以下条件进行操作：
+
+条件：
+1. 上述版权声明和本授权许可声明必须包含在所有副本或本软件的重要部分中。
+
+本软件按“现状”提供，不提供任何明示或暗示的保证，包括但不限于对适销性、特定用途适用性和不侵权的保证。在任何情况下，作者或版权拥有者均不对因使用本软件或与本软件有关的行为所引起的任何索赔、损害或其他责任承担责任，无论这些责任是否源自合同、侵权行为或其他原因。
+
+---
+
+MIT License
+
+Copyright (c) 2025 Yunkong (and all subsequent years)
+
+Permission is hereby granted, free of charge, to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is provided to do so, subject to the following conditions:
+
+Conditions:
+1. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
