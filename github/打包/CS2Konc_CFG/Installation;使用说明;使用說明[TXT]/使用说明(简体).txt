@@ -5,55 +5,53 @@
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-CS2Konc_CFG 安装示范路径：  
+🚀 安装说明  
+到 Releases 里下载并解压缩文件，将 `CS2Konc_CFG` 文件夹整个拖到 `CFG` 文件夹，默认的相对路径为：  
 【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-【自动安装】  
-将 CS2Konc_CFG 文件夹拖至 CFG 文件夹，双击 InstallCS2Konc_CFG.bat 自动安装。  
+🛠️ 安装程序  
+打开 CFG main program.bat  
+🖥️ 安装  
+选择安装即可安装CFG。  
+
+🗑️ 解除安装  
+选择解除安装即可解除安装CFG。  
+进入游戏进行重置  
+1. 进入游戏后，重置按键两次。  
+2. 或者执行以下指令：  
+bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig  
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-【手动安装】  
-将 CS2Konc_CFG 文件夹拖至 CFG 文件夹  
-
-加载方式：  
-方式 1  
-启动项中添加：  
-+exec CS2Konc_CFG/CSKoncMod  
-方式 2  
-在 autoexec.cfg 中写入：  
-exec CS2Konc_CFG/CSKoncMod  
-（推荐使用 autoexec.cfg）  
-autoexec.cfg 示例路径：  
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
-
-文字安装：将 resource 文件夹中的文件（.txt）拖至 CS2 的 resource 文件夹。  
-示范路径：  
+⚒️ 手动安装  
+📃文字安装  
+将 resource 文件夹内的文件（.txt）都拖到 CS2 的 resource 文件夹内，默认的相对路径为：  
 【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】  
 
+💿加载方式  
+方式1  
+在 Steam 启动项中添加：  
+【+exec CS2Konc_CFG/CSKoncMod】  
+
+方式2  
+创建一个名为 `autoexec.cfg` 的文件，创建默认的相对路径为：  
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
+里，内容为：  
+【exec CS2Konc_CFG/CSKoncMod】  
+
+推荐用 autoexec.cfg 方式!!!  
+
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-【CFG设置】  
-在 config 文件夹里有  
+⚙️ 相关设置  
+在 config 文件夹里有：  
+
 (KeyPreference.cfg)，自定义修改整个 CFG 初始绑定按键设置  
 (OptPreference.cfg)，自定义修改整个 CFG 初始设置  
 (PersonalSettings.cfg)，自定义修改个人设置  
+
 请按照文本修改 CFG 设置  
-
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
-
-【卸载】  
-双击 UninstallCS2Konc_CFG.bat 卸载（CS2Konc_CFG）  
-然后进到游戏里重制按键2次
-或打
-bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
-
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
-
-【使用方法】  
-按住右 Shift 打开轮盘，移动鼠标选择功能，松开右 Shift 确认选择。  
-滚轮可上下翻页。  
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  

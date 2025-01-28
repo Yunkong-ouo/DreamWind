@@ -1,1 +1,0 @@
-start config\PersonalSettings.cfg

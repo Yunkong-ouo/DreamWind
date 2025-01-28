@@ -1,59 +1,57 @@
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-🔥 Special Note
-! This CFG will overwrite the original settings. Please back up the original CFG before use to prevent any accidents!
+🔥 Special Note  
+! This CFG will overwrite existing settings, please back up your original CFG before use to prevent any accidents!  
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-CS2Konc_CFG installation example path:
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+🚀 Installation Instructions  
+Download and unzip the file from Releases, then drag the entire `CS2Konc_CFG` folder into the `CFG` folder. The default relative path is:  
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-【Automatic Installation】
-Drag the CS2Konc_CFG folder into the CFG folder and double-click InstallCS2Konc_CFG.bat for automatic installation.
+🛠️ Installation Program  
+Open CFG main program.bat  
+🖥️ Installation  
+Select Install to install the CFG.  
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+🗑️ Uninstallation  
+Select Uninstall to remove the CFG.  
+To reset in-game:  
+1. After entering the game, press the reset key twice.  
+2. Or execute the following commands:  
+bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig  
 
-【Manual Installation】
-Drag the CS2Konc_CFG folder into the CFG folder.
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-Loading Methods
-Method 1
-Add the following to the launch options:
-+exec CS2Konc_CFG/CSKoncMod
-Method 2
-Create an autoexec.cfg file and write:
-exec CS2Konc_CFG/CSKoncMod 
-(Recommended to use autoexec.cfg)
-Example path for autoexec.cfg:
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+⚒️ Manual Installation  
+📃 Text Installation  
+Drag the files (.txt) from the resource folder into the CS2 resource folder. The default relative path is:  
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】  
 
-Text Installation: Drag the files (.txt) from the resource folder into CS2's resource folder.  
-Example path:  
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】
+💿 Loading Methods  
+Method 1  
+Add to Steam launch options:  
+【+exec CS2Konc_CFG/CSKoncMod】  
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Method 2  
+Create a file named `autoexec.cfg` in the following default relative path:  
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
+Inside the file, add:  
+【exec CS2Konc_CFG/CSKoncMod】  
 
-【CFG Settings】
-In the config folder, there are:
-(KeyPreference.cfg) to customize and modify the initial key binding settings of the entire CFG
-(OptPreference.cfg) to customize and modify the initial settings of the entire CFG
-(PersonalSettings.cfg) to customize and modify personal settings
-Please modify the CFG settings according to the text
+Recommended to use the autoexec.cfg method!!!  
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-【Uninstall】
-Double-click UninstallCS2Konc_CFG.bat to uninstall (CS2Konc_CFG)
-Then enter the game and reset the keys twice.
-OR
-bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
+⚙️ Related Settings  
+Inside the config folder, you will find:  
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(KeyPreference.cfg) - Customize initial key bindings for the entire CFG  
+(OptPreference.cfg) - Customize general settings for the entire CFG  
+(PersonalSettings.cfg) - Customize personal settings  
 
-【Usage Instructions】
-Hold down Right Shift to open the wheel, move the mouse to select a function, and release Right Shift to confirm the selection.  
-The scroll wheel can be used to scroll up and down.
+Please modify the CFG settings according to the text  
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
