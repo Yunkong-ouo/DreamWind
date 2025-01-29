@@ -90,6 +90,7 @@ echo %Msg_ErrorGeneral%
 pause >nul
 goto MainMenu
 
+
 :PauseGeneral
 if "%Lang%"=="TraditionalChinese" (
     set Msg_PauseGeneral=請按任意鍵退出
@@ -98,7 +99,6 @@ if "%Lang%"=="TraditionalChinese" (
 ) else (
     set Msg_PauseGeneral=Press any key to exit
 )
-echo.
 echo %Msg_PauseGeneral%
 pause >nul
 exit /b
