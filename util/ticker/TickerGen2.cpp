@@ -11,7 +11,7 @@ int main()
     string idx = "pk";
     string idx2 = "%";
     string midx = "120ms";
-    string ticker_path = "CS2Konc_CFG/util/ticker";
+    string ticker_path = "DreamWind/util/ticker";
     string ticker_name = "Ticker";
 
     if (!fs::exists(midx))

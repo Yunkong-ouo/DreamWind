@@ -1,0 +1,17 @@
+1.3.0 Update Log
+[+] Added installation menu
+[-] Removed some .bat files
+[+] Added new movement method
+[+] Project renamed to [DreamWind]!!!
+[+] Fixed the user manual
+
+1.2.8 Update Log
+[+] Fixed some bugs
+[+] Optimized file size
+
+1.2.7 Update Log
+[+] Optimized overall structure
+[+] Improved crosshair functionality
+[+] Improved scroll wheel functionality
+[+] Enhanced CFG settings instructions
+[+] Optimized one-click installation

@@ -67,7 +67,7 @@ else {
 }
 
 # 創建Autoexec
-& ".\install\CS2Konc_CFG_Autoexec_Uninstall.ps1"
+& ".\install\DreamWind_Autoexec_Uninstall.ps1"
 
 # 設定系統語言
 $systemLanguage = [System.Globalization.CultureInfo]::CurrentCulture.Name

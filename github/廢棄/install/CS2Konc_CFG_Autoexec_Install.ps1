@@ -13,15 +13,15 @@ $patterns = @(
     ".*joy_forward_sensitivity\s+[\d.]+.*",
     ".*cl_scoreboard_mouse_enable_binding\s+\+attack2.*",
     ".*cl_quickinventory_filename\s+radial_quickinventory\.txt.*",
-    ".*exec\s+CS2Konc_CFG/CSKoncMod.*",
-    ".*CS2Konc_CFG/CSKoncMod.*",
-    ".*CSKoncMod.*",
-    ".*CS2Konc_CFG.*"
+    ".*exec\s+DreamWind/DreamWindMod.*",
+    ".*DreamWind/DreamWindMod.*",
+    ".*DreamWindMod.*",
+    ".*DreamWind.*"
 )
 
 # 定義要新增的內容
 $newLines = @(
-    "CS2Konc_CFG/CSKoncMod"
+    "DreamWind/DreamWindMod"
 )
 
 # 檢查 autoexec.cfg 是否存在

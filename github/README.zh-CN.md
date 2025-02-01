@@ -5,25 +5,25 @@
 </div>
 
 <div align="center">
-    <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/CS2.jpg" alt="image" width="800">
+    <img src="https://github.com/Yunkong-ouo/DreamWind/blob/main/github/image/CS2.jpg" alt="image" width="800">
 </div>
 
-<h1 align="center">CS2Konc-CFG</h1>
+<h1 align="center">DreamWind-CFG</h1>
 
 <p align="center">
     <a href="https://github.com/Yunkong-ouo/Cs2CfgHighlighterExtension">
         <img alt="CS2 Visual Studio Code 高亮扩展" src="https://img.shields.io/badge/CS2%20VSCode%20%E9%AB%98%E4%BA%AE%E6%89%A9%E5%B1%95-blue?style=for-the-badge&logo=github">
     </a>
-    <a href="https://github.com/Yunkong-ouo/CS2Konc_CFG">
-        <img alt="CS2Konc_CFG" src="https://img.shields.io/badge/CS2%20Konc%20CFG-green?style=for-the-badge&logo=github">
+    <a href="https://github.com/Yunkong-ouo/DreamWind">
+        <img alt="DreamWind" src="https://img.shields.io/badge/CS2%20DreamWind%20CFG-green?style=for-the-badge&logo=github">
     </a>
 </p>
 
-# 💼 CS2Konc-CFG 介绍
+# 💼 DreamWind-CFG 介绍
 
-**CS2Konc-CFG** 是一个轻量级的 CS2 CFG 项目，整合了一些常见的功能，同时提供强大的自定义选项。使用游戏内的轮盘菜单，🚀 使玩家可以在游戏中以可视化的方式访问 **CS2Konc-CFG** 的功能。
-**CS2Konc-CFG** 主要是为轻量设计，同时全功能都能在 `sv_cheats 0` 下运行，也包含了练图模式在 `sv_cheats 1` 下运行，让玩家快速熟悉地图和道具，同样有可视化的方式访问。
-在大多数情况下，使用 **CS2Konc-CFG** 不会导致 **VAC** 封禁。这仅仅是一个 CFG 项目。官方提供的功能👍
+**DreamWind-CFG** 是一个轻量级的 CS2 CFG 项目，整合了一些常见的功能，同时提供强大的自定义选项。使用游戏内的轮盘菜单，🚀 使玩家可以在游戏中以可视化的方式访问 **DreamWind-CFG** 的功能。
+**DreamWind-CFG** 主要是为轻量设计，同时全功能都能在 `sv_cheats 0` 下运行，也包含了练图模式在 `sv_cheats 1` 下运行，让玩家快速熟悉地图和道具，同样有可视化的方式访问。
+在大多数情况下，使用 **DreamWind-CFG** 不会导致 **VAC** 封禁。这仅仅是一个 CFG 项目。官方提供的功能👍
 
 ---
 
@@ -60,7 +60,7 @@
 **！此 CFG 会覆盖原有设置，使用之前请先备份原先 CFG 以防意外！**
 
 # 🚀 安装说明
-到 Releases 里下载并解压缩文件，将 `CS2Konc_CFG` 文件夹整个拖到 `CFG` 文件夹，预设的相对路径为：
+到 Releases 里下载并解压缩文件，将 `DreamWind` 文件夹整个拖到 `CFG` 文件夹，预设的相对路径为：
 ```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
@@ -70,11 +70,10 @@
 ## 打开 `CFG main program.bat`
 ### 🖥️ 安装
 选择安装即可安装CFG。
-### 🗑️ 解除安装
-选择解除安装即可解除安装CFG。
+### 🗑️ 卸载
+选择卸载即可卸载CFG。
 #### 进入游戏进行重置
-1. 进入游戏后，重置按键两次。
-2. 或者执行以下指令：
+执行以下指令：
 ```
 bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
 ```
@@ -91,7 +90,7 @@ bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_resp
 ### 方式1
 在 Steam 启动项中添加：
 ```
-+exec CS2Konc_CFG/CSKoncMod
++exec DreamWind/DreamWindMod
 ```
 ---
 ### 方式2
@@ -101,7 +100,7 @@ bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_resp
 ```
 里，内容为：
 ```
-exec CS2Konc_CFG/CSKoncMod
+exec DreamWind/DreamWindMod
 ```
 <h1><b>推荐用 autoexec.cfg 方式</b></h1>
 

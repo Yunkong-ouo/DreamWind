@@ -41,26 +41,26 @@ if "%Lang%"=="TraditionalChinese" (
 )
 timeout /t 1 >nul
 
-REM 檢查是否在 CS2Konc_CFG 資料夾中
+REM 檢查是否在 DreamWind 資料夾中
 for %%I in (.) do set CurrDirName=%%~nxI
-if /I not "%CurrDirName%"=="CS2Konc_CFG" (
+if /I not "%CurrDirName%"=="DreamWind" (
     cls
     color 0C
     if "%Lang%"=="TraditionalChinese" (
-        echo 請把此資料夾放進 CS2Konc_CFG 資料夾中!!!
-        echo 請把此資料夾放進 CS2Konc_CFG 資料夾中!!!
-        echo 請把此資料夾放進 CS2Konc_CFG 資料夾中!!!
-        echo 請確保此資料夾在 *\Counter-Strike Global Offensive\game\csgo\cfg\CS2Konc_CFG 目錄當中
+        echo 請把此資料夾放進 DreamWind 資料夾中!!!
+        echo 請把此資料夾放進 DreamWind 資料夾中!!!
+        echo 請把此資料夾放進 DreamWind 資料夾中!!!
+        echo 請確保此資料夾在 *\Counter-Strike Global Offensive\game\csgo\cfg\DreamWind 目錄當中
     ) else if "%Lang%"=="SimplifiedChinese" (
-        echo 请把此文件夹放进 CS2Konc_CFG 文件夹中!!!
-        echo 请把此文件夹放进 CS2Konc_CFG 文件夹中!!!
-        echo 请把此文件夹放进 CS2Konc_CFG 文件夹中!!!
-        echo 请确保此文件夹在 *\Counter-Strike Global Offensive\game\csgo\cfg\CS2Konc_CFG 目录當中
+        echo 请把此文件夹放进 DreamWind 文件夹中!!!
+        echo 请把此文件夹放进 DreamWind 文件夹中!!!
+        echo 请把此文件夹放进 DreamWind 文件夹中!!!
+        echo 请确保此文件夹在 *\Counter-Strike Global Offensive\game\csgo\cfg\DreamWind 目录當中
     ) else (
-        echo Please place this folder into the CS2Konc_CFG folder!!!
-        echo Please place this folder into the CS2Konc_CFG folder!!!
-        echo Please place this folder into the CS2Konc_CFG folder!!!
-        echo Please make sure this folder is in the *\Counter-Strike Global Offensive\game\csgo\cfg\CS2Konc_CFG directory.
+        echo Please place this folder into the DreamWind folder!!!
+        echo Please place this folder into the DreamWind folder!!!
+        echo Please place this folder into the DreamWind folder!!!
+        echo Please make sure this folder is in the *\Counter-Strike Global Offensive\game\csgo\cfg\DreamWind directory.
     )
     echo.
     if "%Lang%"=="TraditionalChinese" (
@@ -74,7 +74,7 @@ if /I not "%CurrDirName%"=="CS2Konc_CFG" (
     exit /b
 )
 
-REM 檢測 CS2Konc_CFG 放置位置
+REM 檢測 DreamWind 放置位置
 cd /d %~dp0
 cd ../../
 set "EXPECTED_FOLDER_NAME=csgo"
@@ -93,19 +93,19 @@ if /I "%CURRENT_FOLDER_NAME%" neq "%EXPECTED_FOLDER_NAME%" (
     cls
     color 0C
     if "%Lang%"=="TraditionalChinese" (
-        echo 您的 CS2Konc_CFG 放置位置錯誤!!!，請重看使用說明
-        echo 您的 CS2Konc_CFG 放置位置錯誤!!!，請重看使用說明
-        echo 您的 CS2Konc_CFG 放置位置錯誤!!!，請重看使用說明
+        echo 您的 DreamWind 放置位置錯誤!!!，請重看使用說明
+        echo 您的 DreamWind 放置位置錯誤!!!，請重看使用說明
+        echo 您的 DreamWind 放置位置錯誤!!!，請重看使用說明
         echo 請確保此資料夾放在 *\Counter-Strike Global Offensive\game\csgo\cfg 目錄當中
     ) else if "%Lang%"=="SimplifiedChinese" (
-        echo 您的 CS2Konc_CFG 放置位置错误!!!，请重看使用说明
-        echo 您的 CS2Konc_CFG 放置位置错误!!!，请重看使用说明
-        echo 您的 CS2Konc_CFG 放置位置错误!!!，请重看使用说明
+        echo 您的 DreamWind 放置位置错误!!!，请重看使用说明
+        echo 您的 DreamWind 放置位置错误!!!，请重看使用说明
+        echo 您的 DreamWind 放置位置错误!!!，请重看使用说明
         echo 请确保此文件夹放在 *\Counter-Strike Global Offensive\game\csgo\cfg 目录当中
     ) else (
-        echo Your CS2Konc_CFG placement is incorrect!!! Please refer to the instructions again.
-        echo Your CS2Konc_CFG placement is incorrect!!! Please refer to the instructions again.
-        echo Your CS2Konc_CFG placement is incorrect!!! Please refer to the instructions again.
+        echo Your DreamWind placement is incorrect!!! Please refer to the instructions again.
+        echo Your DreamWind placement is incorrect!!! Please refer to the instructions again.
+        echo Your DreamWind placement is incorrect!!! Please refer to the instructions again.
         echo Please make sure this folder is placed in the *\Counter-Strike Global Offensive\game\csgo\cfg directory.
     )
     echo.
@@ -120,7 +120,7 @@ if /I "%CURRENT_FOLDER_NAME%" neq "%EXPECTED_FOLDER_NAME%" (
     exit /b
 )
 
-cd ./cfg/CS2Konc_CFG/
+cd ./cfg/DreamWind/
 
 REM 壓縮 resource 資料夾為 resource.zip
 cls
@@ -244,11 +244,11 @@ if "%ERRORLEVEL%"=="1" (
     )
     color 0A
     REM 運行 PowerShell 腳本並在完成後退出
-    call powershell.exe -ExecutionPolicy Bypass -File ".\install\CS2Konc_CFG_Install_Resource.ps1"
+    call powershell.exe -ExecutionPolicy Bypass -File ".\install\DreamWind_Install_Resource.ps1"
     exit /b
 )
 
 cls
 color 0A
 REM 執行默認的 PowerShell 腳本
-call powershell.exe -ExecutionPolicy Bypass -File ".\install\CS2Konc_CFG_Install_Resource_Perfect.ps1"
+call powershell.exe -ExecutionPolicy Bypass -File ".\install\DreamWind_Install_Resource_Perfect.ps1"

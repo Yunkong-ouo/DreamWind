@@ -1,57 +1,59 @@
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-🔥 Special Note  
-! This CFG will overwrite existing settings, please back up your original CFG before use to prevent any accidents!  
+詳細請看Manual.pdf
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-🚀 Installation Instructions  
-Download and unzip the file from Releases, then drag the entire `CS2Konc_CFG` folder into the `CFG` folder. The default relative path is:  
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
+🔥 特別說明  
+！此 CFG 會覆蓋原有設置，使用之前請先備份原先的 CFG 以防意外！  
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-🛠️ Installation Program  
-Open CFG main program.bat  
-🖥️ Installation  
-Select Install to install the CFG.  
+🚀 安裝說明
+到 Releases 裡下載並解壓縮文件，將 `DreamWind` 資料夾整個拖到 `CFG` 資料夾，預設的相對路徑為：
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-🗑️ Uninstallation  
-Select Uninstall to remove the CFG.  
-To reset in-game:  
-1. After entering the game, press the reset key twice.  
-2. Or execute the following commands:  
-bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig  
+🛠️ 安裝程序
+打開 CFG main program.bat
+🖥️ 安裝
+選擇安裝即可安裝CFG。
+
+🗑️ 解除安裝
+選擇解除安裝即可解除安裝CFG。
+進入遊戲進行重製
+執行以下指令：
+bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-⚒️ Manual Installation  
-📃 Text Installation  
-Drag the files (.txt) from the resource folder into the CS2 resource folder. The default relative path is:  
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】  
+⚒️ 手動安裝
+📃文字安裝
+將 resource 文件夾內的檔案（.txt）都拖到 CS2 的 resource 文件夾內，預設的相對路徑為：
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】
 
-💿 Loading Methods  
-Method 1  
-Add to Steam launch options:  
-【+exec CS2Konc_CFG/CSKoncMod】  
+💿載入方式
+方式1
+在 Steam 啟動項中添加：
+【+exec DreamWind/DreamWindMod】
 
-Method 2  
-Create a file named `autoexec.cfg` in the following default relative path:  
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
-Inside the file, add:  
-【exec CS2Konc_CFG/CSKoncMod】  
+方式2
+創建一個名為 `autoexec.cfg` 的檔案，創建預設的相對路徑為：
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+裡，內容為：
+【exec DreamWind/DreamWindMod】
 
-Recommended to use the autoexec.cfg method!!!  
+推薦用 autoexec.cfg 方式!!!
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
 
-⚙️ Related Settings  
-Inside the config folder, you will find:  
+⚙️ 相關設定
+在 config 資料夾裡有：
 
-(KeyPreference.cfg) - Customize initial key bindings for the entire CFG  
-(OptPreference.cfg) - Customize general settings for the entire CFG  
-(PersonalSettings.cfg) - Customize personal settings  
+(KeyPreference.cfg)，自定義修改整個 CFG 初始綁定按鍵設置
+(OptPreference.cfg)，自定義修改整個 CFG 初始設置
+(PersonalSettings.cfg)，自定義修改個人設置
 
-Please modify the CFG settings according to the text  
+請按照文本修改 CFG 設置
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  

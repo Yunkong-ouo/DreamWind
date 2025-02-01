@@ -5,22 +5,22 @@
 </div>
 
 <div align="center">
-    <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/CS2.jpg" alt="image" width="800">
+    <img src="https://github.com/Yunkong-ouo/DreamWind/blob/main/github/image/CS2.jpg" alt="image" width="800">
 </div>
 
 <p align="center">
     <a href="https://github.com/Yunkong-ouo/Cs2CfgHighlighterExtension">
         <img alt="CS2 Visual Studio Code 高亮擴展" src="https://img.shields.io/badge/CS2%20VSCode%20%E9%AB%98%E4%BA%AE%E6%93%B4%E5%B1%95-blue?style=for-the-badge&logo=github">
     </a>
-    <a href="https://github.com/Yunkong-ouo/CS2Konc_CFG">
-        <img alt="CS2Konc_CFG" src="https://img.shields.io/badge/CS2%20Konc%20CFG-green?style=for-the-badge&logo=github">
+    <a href="https://github.com/Yunkong-ouo/DreamWind">
+        <img alt="DreamWind" src="https://img.shields.io/badge/CS2%20DreamWind%20CFG-green?style=for-the-badge&logo=github">
     </a>
 </p>
 
-# 💼 CS2Konc-CFG 介紹
-**CS2Konc-CFG** 是一個輕量級的 CS2 CFG 項目，整合了一些常見的功能，同時提供強大的自定義選項。使用遊戲內的輪盤選單，🚀 使玩家可以在遊戲中以視覺化的方式訪問 **CS2Konc-CFG** 的功能。
-**CS2Konc-CFG** 主要是為輕量設計，同時全功能都能在 `sv_cheats 0` 下運行，也包含了練圖模式在 `sv_cheats 1` 下運行，讓玩家快速熟悉地圖和道具，同樣有視覺化的方式訪問。
-在大多數情況下，使用 **CS2Konc-CFG** 不會導致 **VAC** 封禁。這僅僅是一個 CFG 專案。官方提供的功能👍
+# 💼 DreamWind-CFG 介紹
+**DreamWind-CFG** 是一個輕量級的 CS2 CFG 項目，整合了一些常見的功能，同時提供強大的自定義選項。使用遊戲內的輪盤選單，🚀 使玩家可以在遊戲中以視覺化的方式訪問 **DreamWind-CFG** 的功能。
+**DreamWind-CFG** 主要是為輕量設計，同時全功能都能在 `sv_cheats 0` 下運行，也包含了練圖模式在 `sv_cheats 1` 下運行，讓玩家快速熟悉地圖和道具，同樣有視覺化的方式訪問。
+在大多數情況下，使用 **DreamWind-CFG** 不會導致 **VAC** 封禁。這僅僅是一個 CFG 專案。官方提供的功能👍
 
 ---
 
@@ -57,7 +57,7 @@
 **！此 CFG 會覆蓋原有設置，使用之前請先備份原先 CFG 以防意外！**
 
 # 🚀 安裝說明
-到 Releases 裡下載並解壓縮文件，將 `CS2Konc_CFG` 資料夾整個拖到 `CFG` 資料夾，預設的相對路徑為：
+到 Releases 裡下載並解壓縮文件，將 `DreamWind` 資料夾整個拖到 `CFG` 資料夾，預設的相對路徑為：
 ```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
@@ -70,8 +70,7 @@
 ### 🗑️ 解除安裝
 選擇解除安裝即可解除安裝CFG。
 #### 進入遊戲進行重製
-1. 進入遊戲後，重製按鍵兩次。
-2. 或者執行以下指令：
+執行以下指令：
 ```
 bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
 ```
@@ -88,7 +87,7 @@ bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_resp
 ### 方式1
 在 Steam 啟動項中添加：
 ```
-+exec CS2Konc_CFG/CSKoncMod
++exec DreamWind/DreamWindMod
 ```
 ---
 ### 方式2
@@ -98,7 +97,7 @@ bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_resp
 ```
 裡，內容為：
 ```
-exec CS2Konc_CFG/CSKoncMod
+exec DreamWind/DreamWindMod
 ```
 <h1><b>推薦用 autoexec.cfg 方式</b></h1>
 

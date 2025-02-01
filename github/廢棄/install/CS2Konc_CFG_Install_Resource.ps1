@@ -77,7 +77,7 @@ else {
 Expand-Archive -Path $zipFilePath2 -DestinationPath $destinationFolder2 -Force
 
 # 創建Autoexec
-& ".\install\CS2Konc_CFG_Autoexec_Install.ps1"
+& ".\install\DreamWind_Autoexec_Install.ps1"
 
 # 設定系統語言
 $systemLanguage = [System.Globalization.CultureInfo]::CurrentCulture.Name

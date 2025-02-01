@@ -4,9 +4,9 @@ cls
 color 0a
 
 set version=v1.2.8
-set zipFile=CS2Konc_CFG_%version%.zip
-REM set zipFile=CS2Konc_CFG_%version%.7z
-set folderToZip=CS2Konc_CFG
+set zipFile=DreamWind_%version%.zip
+REM set zipFile=DreamWind_%version%.7z
+set folderToZip=DreamWind
 
 REM 如果已存在同名的壓縮檔案，先刪除
 if exist "%zipFile%" del "%zipFile%"

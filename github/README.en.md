@@ -5,24 +5,24 @@
 </div>
 
 <div align="center">
-    <img src="https://github.com/Yunkong-ouo/CS2Konc_CFG/blob/main/github/image/CS2.jpg" alt="image" width="800">
+    <img src="https://github.com/Yunkong-ouo/DreamWind/blob/main/github/image/CS2.jpg" alt="image" width="800">
 </div>
 
-<h1 align="center">CS2Konc-CFG</h1>
+<h1 align="center">DreamWind-CFG</h1>
 
 <p align="center">
     <a href="https://github.com/Yunkong-ouo/Cs2CfgHighlighterExtension">
         <img alt="CS2 Visual Studio Code Highlight Extension" src="https://img.shields.io/badge/CS2%20VSCode%20Highlight%20Extension-blue?style=for-the-badge&logo=github">
     </a>
-    <a href="https://github.com/Yunkong-ouo/CS2Konc_CFG">
-        <img alt="CS2Konc_CFG" src="https://img.shields.io/badge/CS2%20Konc%20CFG-green?style=for-the-badge&logo=github">
+    <a href="https://github.com/Yunkong-ouo/DreamWind">
+        <img alt="DreamWind" src="https://img.shields.io/badge/CS2%20DreamWind%20CFG-green?style=for-the-badge&logo=github">
     </a>
 </p>
 
-# 💼 CS2Konc-CFG Introduction
-**CS2Konc-CFG** is a lightweight CS2 CFG project that integrates common features and provides powerful customization options. Using the in-game wheel menu, 🚀 it allows players to access the features of **CS2Konc-CFG** visually within the game.
-**CS2Konc-CFG** is designed to be lightweight while still providing full functionality under sv_cheats 0. It also includes a practice mode for sv_cheats 1, allowing players to quickly familiarize themselves with maps and items, and offers visual access to these features.
-In most cases, using **CS2Konc-CFG** will not lead to a **VAC** ban. This is merely a CFG project with features provided by the official game 👍
+# 💼 DreamWind-CFG Introduction
+**DreamWind-CFG** is a lightweight CS2 CFG project that integrates common features and provides powerful customization options. Using the in-game wheel menu, 🚀 it allows players to access the features of **DreamWind-CFG** visually within the game.
+**DreamWind-CFG** is designed to be lightweight while still providing full functionality under sv_cheats 0. It also includes a practice mode for sv_cheats 1, allowing players to quickly familiarize themselves with maps and items, and offers visual access to these features.
+In most cases, using **DreamWind-CFG** will not lead to a **VAC** ban. This is merely a CFG project with features provided by the official game 👍
 
 ---
 
@@ -59,9 +59,10 @@ In most cases, using **CS2Konc-CFG** will not lead to a **VAC** ban. This is mer
 **! This CFG will overwrite your existing settings, make sure to back up your original CFG before using to prevent accidents!**
 
 # 🚀 Installation Guide
-Download and unzip the files from the Releases, then drag the entire CS2Konc_CFG folder into the CFG folder. The default relative path is:
+Download and unzip the files from the Releases, then drag the entire DreamWind folder into the CFG folder. The default relative path is:
+```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
-
+```
 ---
 
 # 🛠️ Automatic Installation
@@ -71,31 +72,36 @@ Select Install to install the CFG.
 ### 🗑️ Uninstallation
 Select Uninstall to remove the CFG.
 #### Reset in-game
-1. Enter the game and press reset twice.
-2. Alternatively, run the following commands:
+run the following commands:
+```
 bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
+```
 
 ---
 
 # ⚒️ Manual Installation
 ## 📃 Text Installation
 Drag the files (.txt) from the resource folder into the CS2 resource folder. The default relative path is:
+```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource
-
+```
 ---
 
 ## 💿 Loading Methods
 ### Method 1
 Add to Steam launch options:
-+exec CS2Konc_CFG/CSKoncMod
-
+```
++exec DreamWind/DreamWindMod
+```
 ### Method 2
 Create a file named autoexec.cfg in the following default relative path:
+```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
-
+```
 Inside the file, add:
-exec CS2Konc_CFG/CSKoncMod
-
+```
+exec DreamWind/DreamWindMod
+```
 <h1><b>Recommended to use the autoexec.cfg method</b></h1>
 
 ---

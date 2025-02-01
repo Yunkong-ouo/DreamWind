@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 chcp 65001 >nul
-title CS2Konc_CFG
+title DreamWind
 mode con: cols=80 lines=25
 color 0a
 cls
@@ -109,7 +109,7 @@ mode con: cols=80 lines=25
 cls
 REM 檢查是否在 %NAME% 資料夾中
 cd /d %~dp0
-set "NAME=CS2Konc_CFG"
+set "NAME=DreamWind"
 for %%I in (.) do set CurrDirName=%%~nxI
 if /I not "%CurrDirName%"=="!NAME!" (
     cls
@@ -338,7 +338,7 @@ echo.
 
 REM 設置要檢查的行
 set "ADDITIONAL_CONTENT=joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt"
-set "EXEC_COMMAND=CS2Konc_CFG/CSKoncMod"
+set "EXEC_COMMAND=DreamWind/DreamWindMod"
 
 REM 設置 autoexec.cfg 文件路徑
 set "AUTOEXEC_FILE=autoexec.cfg"
@@ -458,7 +458,7 @@ for /r "%RESOURCE_DIR%" %%F in (*) do (
 cd "%~dp0.."
 
 REM 設置要檢查的行
-set "EXEC_COMMAND=CS2Konc_CFG/CSKoncMod"
+set "EXEC_COMMAND=DreamWind/DreamWindMod"
 set "AUTOEXEC_FILE=autoexec.cfg"
 
 REM 設置要新增的內容，將所有命令合併為一行
