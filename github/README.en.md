@@ -20,59 +20,62 @@
 </p>
 
 # 💼 DreamWind-CFG Introduction
-**DreamWind-CFG** is a lightweight CS2 CFG project that integrates common features and provides powerful customization options. Using the in-game wheel menu, 🚀 it allows players to access the features of **DreamWind-CFG** visually within the game.
-**DreamWind-CFG** is designed to be lightweight while still providing full functionality under sv_cheats 0. It also includes a practice mode for sv_cheats 1, allowing players to quickly familiarize themselves with maps and items, and offers visual access to these features.
-In most cases, using **DreamWind-CFG** will not lead to a **VAC** ban. This is merely a CFG project with features provided by the official game 👍
+
+**DreamWind-CFG** is a lightweight CS2 CFG project that integrates common features while providing powerful customization options. With an in-game radial menu, 🚀 players can visually access **DreamWind-CFG** functions directly in-game.
+Designed with a lightweight approach, all features can run under `sv_cheats 0`, while an additional practice mode is available for `sv_cheats 1`, helping players quickly familiarize themselves with maps and utilities through a visual interface.
+In most cases, using **DreamWind-CFG** will not result in a **VAC** ban. This is purely a CFG project that utilizes only official game features 👍.
 
 ---
 
 ## ✨ Features
-- 🔥 Fast Configuration
+- 🔥 Quick Setup
 - 💤 Simple Interface
-- 📦 Pre-installed Plugins
+- 📦 Preconfigured Plugins
 - 🧹 Elegant Design
-- 🚀 Lightning Fast
----
-
-# 📝 Features Description
-| Name                      | Description                                 
-|------------------------- |---------------------------------------------
-| Auto Stop (Deprecated)     | Quickly slows down speed using WASD
-| Jump Throw Bind            | Auto-throw in WASD directions or no-direction throw
-| Space Jump                 | Auto jump when the space bar is pressed
-| Cancel Defuse on Fire      | Automatically cancels defusing when the fire key is pressed and continues defusing when released
-| Wheel Item Switch          | Save keys, just long press a bound key to bring up the wheel, and tapping will switch items
-| Sniper Quick Switch        | Quickly switch weapons by pressing Q
-| Auto Clear Frequency       | Built-in key for clearing text, typing faster than others
-| Custom Text Output         | Outputs text in close/console/team/all/switch CFG
-| Crosshair Utility          | Features related to crosshair following
-| Scroll Wheel Utility       | Convenient for setting scroll wheel related options, customizable
-| Practice Mode (Deprecated) | One-click practice mode setup, customizable options
-| Auto Bunnyhop              | Auto jump when pressing the space bar
-| Stealth Zoom Small Map     | Automatically zoom in/out when crouch walking
-| CFG Reset Flash Alert      | Changes interface color to alert when CFG is reset
-| Pistol Fast Fire           | Press and hold fire to rapidly shoot when using a pistol, R8 auto cancels
+- 🚀 Fast Response
 
 ---
 
-# 🔥 Special Notes
-**! This CFG will overwrite your existing settings, make sure to back up your original CFG before using to prevent accidents!**
+# 📝 Features Overview
+| Name                     | Description
+|------------------------- |----------------------------------------
+| Auto Stop (Deprecated)   | WASD can quickly reduce movement speed
+| Jump Throw Bind          | Automatically performs directional or non-directional throws based on WASD input
+| Spacebar Long Jump       | Holding spacebar triggers long jumps automatically
+| Fire to Cancel Defuse    | Pressing fire cancels defusing; releasing continues defusing
+| Radial Utility Selection | Saves key bindings; hold the bind key to open the radial menu, tap to switch utilities
+| Sniper Quick Switch      | Pressing Q quickly swaps to a sniper rifle
+| Auto Chat Spam           | Built-in spam messages for faster text input
+| Custom Text Output       | Customize text output when switching CFGs, to console, team, or all chat
+| Crosshair Utilities      | Includes crosshair following and related features
+| Scroll Wheel Utilities   | Easy customization of scroll wheel actions
+| Practice Mode (Deprecated) | One-click practice setup with customizable features
+| Auto Bunny Hop           | Holding spacebar enables continuous jumping
+| Minimap Zoom on Walk     | Automatically zooms in or out on the minimap when walking
+| CFG Reset Indicator      | Changes UI colors to indicate CFG reset
+| Pistol Rapid Fire        | Holding fire rapidly shoots pistols; automatically cancels for R8 revolver
+
+---
+
+# 🔥 Important Notes
+**⚠️ This CFG will overwrite existing settings. Please back up your original CFG before use!**
 
 # 🚀 Installation Guide
-Download and unzip the files from the Releases, then drag the entire DreamWind folder into the CFG folder. The default relative path is:
+Download and extract the files from Releases. Move the entire `DreamWind` folder into the `CFG` directory. The default relative path is:
 ```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
+
 ---
 
 # 🛠️ Automatic Installation
-## Open CFG main program.bat
+## Open `CFG main program.bat`
 ### 🖥️ Installation
-Select Install to install the CFG.
+Select「Install」 to complete the CFG installation.
 ### 🗑️ Uninstallation
-Select Uninstall to remove the CFG.
-#### Reset in-game
-run the following commands:
+Select「Uninstall」 to remove the CFG.
+#### Reset After Launching the Game
+Execute the following command:
 ```
 bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
 ```
@@ -80,39 +83,41 @@ bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_resp
 ---
 
 # ⚒️ Manual Installation
-## 📃 Text Installation
-Drag the files (.txt) from the resource folder into the CS2 resource folder. The default relative path is:
+## 📃 Placing Files Manually
+Move all `.txt` files from the `resource` folder into CS2's `resource` directory. The default relative path is:
 ```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource
 ```
+
 ---
 
-## 💿 Loading Methods
+## 💿 Loading the CFG
 ### Method 1
-Add to Steam launch options:
+Add the following to the Steam launch options:
 ```
 +exec DreamWind/DreamWindMod
 ```
+---
 ### Method 2
-Create a file named autoexec.cfg in the following default relative path:
+Create a file named `autoexec.cfg` and place it in the default relative path:
 ```
 *\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
-Inside the file, add:
+Inside the file, add the following line:
 ```
 exec DreamWind/DreamWindMod
 ```
-<h1><b>Recommended to use the autoexec.cfg method</b></h1>
+<h1><b>Recommended: Use autoexec.cfg Method</b></h1>
 
 ---
 
-# ⚙️ Related Settings
-Inside the config folder, you will find:
+# ⚙️ Configuration Files
+The `config` folder contains the following files:
 ```
-(KeyPreference.cfg) - Customize initial key bindings for the entire CFG
-(OptPreference.cfg) - Customize general settings for the entire CFG
-(PersonalSettings.cfg) - Customize personal settings
+(KeyPreference.cfg)    —— Configures key bindings for the entire CFG
+(OptPreference.cfg)    —— Configures general settings for the CFG
+(PersonalSettings.cfg) —— Configures personal settings
 ```
-**Please modify the CFG settings according to the text.**
+**Follow the instructions within each file to adjust the CFG settings.**
 
 ---

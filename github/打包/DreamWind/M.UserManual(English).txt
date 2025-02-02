@@ -1,60 +1,59 @@
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════ 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 Please refer to the Manual.pdf for details.
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
-🔥 Special Note  
-! This CFG will overwrite existing settings, please back up your original CFG before use to prevent any accidents!  
+🔥 Important Notes
+⚠️ This CFG will overwrite existing settings. Please back up your original CFG before use!**
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
-🚀 Installation Instructions  
-Download and unzip the file from Releases, then drag the entire `DreamWind` folder into the `CFG` folder. The default relative path is:  
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
+🚀 Installation Guide
+Download and extract the files from Releases. Move the entire DreamWind folder into the CFG directory. The default relative path is:
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
-🛠️ Installation Program  
-Open CFG main program.bat  
-🖥️ Installation  
-Select Install to install the CFG.  
+🛠️ Automatic Installation
+Open CFG main program.bat
+🖥️ Installation
+Select「Install」 to complete the CFG installation.
+🗑️ Uninstallation
+Select「Uninstall」 to remove the CFG.
+Reset After Launching the Game
+Execute the following command:
+bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig
 
-🗑️ Uninstallation  
-Select Uninstall to remove the CFG.  
-To reset in-game:  
-execute the following commands:  
-bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt;host_writeconfig  
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
+⚒️ Manual Installation
+📃 Placing Files Manually
+Move all .txt files from the resource folder into CS2's resource directory. The default relative path is:
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】
 
-⚒️ Manual Installation  
-📃 Text Installation  
-Drag the files (.txt) from the resource folder into the CS2 resource folder. The default relative path is:  
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\resource】  
+💿 Loading the CFG
+Method 1
+Add the following to the Steam launch options:
++exec DreamWind/DreamWindMod
+---
+Method 2
+Create a file named autoexec.cfg and place it in the default relative path:
+【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】
+Inside the file, add the following line:
+exec DreamWind/DreamWindMod
 
-💿 Loading Methods  
-Method 1  
-Add to Steam launch options:  
-【+exec DreamWind/DreamWindMod】  
+Recommended: Use autoexec.cfg Method!!!
 
-Method 2  
-Create a file named `autoexec.cfg` in the following default relative path:  
-【*\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg】  
-Inside the file, add:  
-【exec DreamWind/DreamWindMod】  
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
-Recommended to use the autoexec.cfg method!!!  
+⚙️ Configuration Files
+The config folder contains the following files:
 
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
+(KeyPreference.cfg)    —— Configures key bindings for the entire CFG
+(OptPreference.cfg)    —— Configures general settings for the CFG
+(PersonalSettings.cfg) —— Configures personal settings
 
-⚙️ Related Settings  
-Inside the config folder, you will find:  
+Follow the instructions within each file to adjust the CFG settings.
 
-(KeyPreference.cfg) - Customize initial key bindings for the entire CFG  
-(OptPreference.cfg) - Customize general settings for the entire CFG  
-(PersonalSettings.cfg) - Customize personal settings  
-
-Please modify the CFG settings according to the text  
-
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
