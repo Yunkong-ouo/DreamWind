@@ -57,8 +57,8 @@
     "AutoStopSnaptap"               "Snaptap急停 \n \n \n \n"
     "AutoStopOFF"                   "關閉急停 \n \n \n \n"
 
-    "RouletteCuttingToolON"         "開啟輪盤切道具 \n \n \n \n"
-    "RouletteCuttingToolOFF"        "關閉輪盤切道具 \n \n \n \n"
+    "RouletteCuttingToolON"         "開啟快捷道具輪盤鍵 \n \n \n \n"
+    "RouletteCuttingToolOFF"        "關閉快捷道具輪盤鍵 \n \n \n \n"
 
     "ShootCancelUnpackingON"        "開啟開槍取消拆包 \n \n \n \n"
     "ShootCancelUnpackingOFF"       "關閉開槍取消拆包 \n \n \n \n"
@@ -75,6 +75,8 @@
     "WashFrequencySpeedSlow"        "洗頻速度慢 \n \n \n \n"
     "WashFrequencyON"               "開啟洗頻 \n \n \n \n"
     "WashFrequencyOFF"              "關閉洗頻 \n \n \n \n"
+
+    "AutoItem"                      "自動道具"
 
     "TextOutputSettings"            "文字輸出設置 \n \n \n \n"
     "NoTextOutput"                  "關閉文字輸出 \n \n \n \n"

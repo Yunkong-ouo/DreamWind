@@ -51,14 +51,14 @@
     "RapidFireON"                   "Rapid Fire ON \n \n \n \n"
     "RapidFireOFF"                  "Rapid Fire OFF \n \n \n \n"
 
-    "AutoStopFull"                  "Auto Stop Full \n \n \n \n"
-    "AutoStopSingle"                "Auto Stop Single \n \n \n \n"
-    "AutoStopDouble"                "Auto Stop Double \n \n \n \n"
-    "AutoStopSnaptap"               "Auto Stop Snaptap \n \n \n \n"
-    "AutoStopOFF"                   "Auto Stop OFF \n \n \n \n"
+    "AutoStopFull"                  "AutoStop Full \n \n \n \n"
+    "AutoStopSingle"                "AutoStop Single \n \n \n \n"
+    "AutoStopDouble"                "AutoStop Double \n \n \n \n"
+    "AutoStopSnaptap"               "AutoStop Snaptap \n \n \n \n"
+    "AutoStopOFF"                   "AutoStop OFF \n \n \n \n"
 
-    "RouletteCuttingToolON"         "Roulette Cutting Tool ON \n \n \n \n"
-    "RouletteCuttingToolOFF"        "Roulette Cutting Tool OFF \n \n \n \n"
+    "RouletteCuttingToolON"         "QuickItemWheelKeyON \n \n \n \n"
+    "RouletteCuttingToolOFF"        "QuickItemWheelKeyOFF \n \n \n \n"
 
     "ShootCancelUnpackingON"        "Shoot Cancel Unpacking ON \n \n \n \n"
     "ShootCancelUnpackingOFF"       "Shoot Cancel Unpacking OFF \n \n \n \n"

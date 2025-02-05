@@ -57,8 +57,8 @@
     "AutoStopSnaptap"               "Snaptap急停 \n \n \n \n"
     "AutoStopOFF"                   "关闭急停 \n \n \n \n"
 
-    "RouletteCuttingToolON"         "开启轮盘切道具 \n \n \n \n"
-    "RouletteCuttingToolOFF"        "关闭轮盘切道具 \n \n \n \n"
+    "RouletteCuttingToolON"         "开启快捷道具轮盘键 \n \n \n \n"
+    "RouletteCuttingToolOFF"        "关闭快捷道具轮盘键 \n \n \n \n"
 
     "ShootCancelUnpackingON"        "开启开枪取消拆包 \n \n \n \n"
     "ShootCancelUnpackingOFF"       "关闭开枪取消拆包 \n \n \n \n"

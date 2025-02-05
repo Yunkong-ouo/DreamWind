@@ -3,7 +3,7 @@ chcp 65001 >nul 2>&1
 cls
 color 0a
 
-set version=v1.2.8
+set version=v1.3.0-Beta
 set zipFile=DreamWind_%version%.zip
 REM set zipFile=DreamWind_%version%.7z
 set folderToZip=DreamWind
