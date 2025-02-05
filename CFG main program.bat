@@ -492,7 +492,7 @@ if %errorlevel% neq 0 (
     REM 刪除文件中所有包含 "%ADDITIONAL_CONTENT%" 的行
     findstr /v /i "%ADDITIONAL_CONTENT%" "%AUTOEXEC_FILE%" > "%AUTOEXEC_FILE%.tmp" 2>nul
     move /Y "%AUTOEXEC_FILE%.tmp" "%AUTOEXEC_FILE%" >nul 2>&1
-    echo %ADDITIONAL_CONTENT% >> "%AUTOEXEC_FILE%"
+    @REM echo %ADDITIONAL_CONTENT% >> "%AUTOEXEC_FILE%"
 ) else (
     REM 如果已經存在，則不進行操作
 )
