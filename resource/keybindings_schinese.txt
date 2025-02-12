@@ -11,7 +11,7 @@
     "PreviousLevel"                 "回到上一层\n \n \n \n"
     "AtFirstPage"                   "已到第一页\n \n \n \n"
     "AtLastPage"                    "已到最后一页\n \n \n \n"
-    "NoneFunction"                  ""
+    "NullValue"                     ""
 
     "FrontPage"                     "首页\n \n \n \n"
     "ReloadConfiguration"           "重新加载配置\n \n \n \n"

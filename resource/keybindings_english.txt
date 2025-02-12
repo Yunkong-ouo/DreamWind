@@ -11,7 +11,7 @@
     "PreviousLevel"                 "Return to Previous Level\n \n \n \n"
     "AtFirstPage"                   "At First Page\n \n \n \n"
     "AtLastPage"                    "At Last Page\n \n \n \n"
-    "NoneFunction"                  ""
+    "NullValue"                     ""
 
     "FrontPage"                     "Front Page\n \n \n \n"
     "ReloadConfiguration"           "Reload Configuration\n \n \n \n"
