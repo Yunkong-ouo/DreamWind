@@ -1,0 +1,7 @@
+alias DWCheckerCertx DWCheckerCertx
+alias DWCheckerecholn "echoln 驗證矢敗"
+sleep 6000
+ClearConsole
+DWCheckerecholn
+sleep 200
+DWCheckerCertx
