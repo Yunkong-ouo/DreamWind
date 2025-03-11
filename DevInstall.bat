@@ -7,57 +7,6 @@ setlocal enabledelayedexpansion
 REM 檢查 64 位系統路徑
 if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
 
-REM 確認是否有管理員權限
-bcdedit >nul
-if '%errorlevel%' NEQ '0' (
-    goto UACPrompt
-) else (
-    goto UACAdmin
-)
-:UACPrompt
-%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
-exit /B
-:UACAdmin
-cd /d "%~dp0"
-
-REM 檢查是否在 DreamWind 資料夾中
-set "NAME=DreamWind"
-for %%I in (.) do set CurrDirName=%%~nxI
-if /I not "%CurrDirName%"=="!NAME!" (
-    cls
-    color 0C
-    echo 請把此資料夾放進 %NAME% 資料夾中!!!
-    echo 請把此資料夾放進 %NAME% 資料夾中!!!
-    echo 請把此資料夾放進 %NAME% 資料夾中!!!
-    echo 請確保此資料夾在 *\Counter-Strike Global Offensive\game\csgo\cfg\%NAME% 目錄當中
-    echo.
-    echo.請按任意鍵退出。
-    pause >nul
-    exit /b
-)
-
-REM 檢測 DreamWind 放置位置
-cd /d %~dp0
-cd ../../
-set "EXPECTED_FOLDER_NAME=csgo"
-for %%F in (.) do set "CURRENT_FOLDER_NAME=%%~nxF"
-echo 當前資料夾名稱: %CURRENT_FOLDER_NAME%
-echo 預期資料夾名稱: %EXPECTED_FOLDER_NAME%
-if /I "%CURRENT_FOLDER_NAME%" neq "%EXPECTED_FOLDER_NAME%" (
-    cls
-    color 0C
-    echo 您的 %NAME% 放置位置錯誤!!!，請重看使用說明
-    echo 您的 %NAME% 放置位置錯誤!!!，請重看使用說明
-    echo 您的 %NAME% 放置位置錯誤!!!，請重看使用說明
-    echo 請確保此資料夾放在 *\Counter-Strike Global Offensive\game\csgo\cfg 目錄當中
-    echo.
-    echo.請按任意鍵退出。
-    pause >nul
-    exit /b
-)
-
-echo.
-
 REM 新增檔案複製操作
 echo 正在複製檔案...
 
@@ -104,7 +53,7 @@ REM 檢查最後一行是否為 "%EXEC_COMMAND%"
 if /i not "!LAST_LINE_CONTENT!"=="!EXEC_COMMAND!" (
     if /i not "!LAST_LINE_CONTENT!"=="!EXEC_COMMAND! " (
         echo 最後一行不是 "%EXEC_COMMAND%"。正在新增到文件...
-        echo.  >> "%AUTOEXEC_FILE%" 
+        echo.  >> "%AUTOEXEC_FILE%"
         echo %EXEC_COMMAND% >> "%AUTOEXEC_FILE%"
     ) else (
         echo 最後一行已經是 "%EXEC_COMMAND%"。未進行修改。
