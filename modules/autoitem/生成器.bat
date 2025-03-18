@@ -66,11 +66,11 @@ echo 5 - 燃燒彈
 echo.
 choice /c 12345 /n /m "選擇："
 set "option1=%errorlevel%"
-if "%option1%"=="5" set slot=slot10
-if "%option1%"=="4" set slot=slot9
-if "%option1%"=="3" set slot=slot8
-if "%option1%"=="2" set slot=slot7
 if "%option1%"=="1" set slot=slot6
+if "%option1%"=="2" set slot=slot7
+if "%option1%"=="3" set slot=slot8
+if "%option1%"=="4" set slot=slot9
+if "%option1%"=="5" set slot=slot10
 echo alias TakeOutProp "!slot!"
 >>!NAME! echo alias TakeOutProp "!slot!"
 
@@ -83,10 +83,19 @@ echo 1 - 普通跳投
 echo.
 echo 2 - 前跳投
 echo.
-choice /c 12 /n /m "選擇："
+echo 3 - 普通投
+echo.
+echo 4 - 雙鍵投
+echo.
+echo 5 - 右鍵投
+echo.
+choice /c 12345 /n /m "選擇："
 set "option2=%errorlevel%"
-if "%option2%"=="2" set throw=PropForwardJumpThrowEvent
 if "%option2%"=="1" set throw=PropJumpThrowEvent
+if "%option2%"=="2" set throw=PropForwardJumpThrowEvent
+if "%option2%"=="3" set throw=PropNormalThrowEvent
+if "%option2%"=="4" set throw=PropDoubleThrowEvent
+if "%option2%"=="5" set throw=PropRightThrowEvent
 echo alias PropThrow "!throw!"
 >>!NAME! echo alias PropThrow "!throw!"
 

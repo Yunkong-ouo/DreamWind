@@ -1,7 +1,9 @@
 alias DWCheckerCertx DWCheckerCertx
 alias DWCheckerecholn "echoln 驗證矢敗"
-sleep 6000
+sleep 5000
 ClearConsole
+echoln 驗證中
+sleep 1000
 DWCheckerecholn
 sleep 200
 DWCheckerCertx
