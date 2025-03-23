@@ -44,6 +44,7 @@ for /f %%i in ('powershell -command "[math]::round((-1 * (!yawvalue! / (!sensiti
 echo.
 echo 計算出 Pitch 的角度
 echo alias ItemAngle_Pitch "pitch !resultPitch! 1 1"
+echo.
 echo 計算出 Yaw 的角度
 echo alias ItemAngle_Yaw "yaw !resultYaw! 1 1"
 >>!NAME! echo alias ItemAngle_Pitch "pitch !resultPitch! 1 1"
