@@ -4,9 +4,6 @@ color 0a
 mode con: cols=80 lines=25
 setlocal enabledelayedexpansion
 
-REM 檢查 64 位系統路徑
-if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
-
 REM 新增檔案複製操作
 echo 正在複製檔案...
 

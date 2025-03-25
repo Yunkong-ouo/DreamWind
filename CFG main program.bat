@@ -6,18 +6,18 @@ mode con: cols=80 lines=25
 color 0a
 cls
 
-REM 確認是否有管理員權限
-bcdedit >nul
-if '%errorlevel%' NEQ '0' (
-    goto UACPrompt
-) else (
-    goto UACAdmin
-)
-:UACPrompt
-%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
-exit /B
-:UACAdmin
-cd /d "%~dp0"
+@REM 確認是否有管理員權限
+@REM bcdedit >nul
+@REM if '%errorlevel%' NEQ '0' (
+@REM     goto UACPrompt
+@REM ) else (
+@REM     goto UACAdmin
+@REM )
+@REM :UACPrompt
+@REM %1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
+@REM exit /B
+@REM :UACAdmin
+@REM cd /d "%~dp0"
 
 REM 取得系統語言設置（從註冊表中獲取）
 for /f "tokens=3" %%a in ('reg query "HKCU\Control Panel\International" /v LocaleName') do set SystemLanguage=%%a
@@ -391,7 +391,7 @@ if /i not "!LAST_LINE_CONTENT!"=="!EXEC_COMMAND!" (
         ) else (
             echo The last line is not "%EXEC_COMMAND%". Adding it to the file...
         )
-        echo.  >> "%AUTOEXEC_FILE%" 
+        echo.  >> "%AUTOEXEC_FILE%"
         echo %EXEC_COMMAND% >> "%AUTOEXEC_FILE%"
     ) else (
         if "%Lang%"=="TraditionalChinese" (
