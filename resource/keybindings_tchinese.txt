@@ -14,9 +14,9 @@
 
     "FrontPage" "首頁\n\n\n\n"
     "ReloadConfiguration" "重新加載配置\n\n\n\n"
-    "ConfigurationSettings" "CFG設置\n\n\n\n"
+    "FeatureSetup" "CFG設置\n\n\n\n"
 
-    "MouseWheelJumpSettings" "滾輪跳設置\n\n\n\n"
+    "WheelSettings" "滾輪設置\n\n\n\n"
     "WheelUpJump" "向上滾輪跳\n\n\n\n"
     "WheelUpSwitch" "向上滾輪切換武器\n\n\n\n"
     "WheelUpCustomize" "向上滾輪自定義\n\n\n\n"
@@ -56,8 +56,8 @@
     "ShootCancelUnpackingON" "開啟開槍取消拆包\n\n\n\n"
     "ShootCancelUnpackingOFF" "關閉開槍取消拆包\n\n\n\n"
 
-    "AutoSwitchWeaponON" "開啟狙擊槍快速切槍\n\n\n\n"
-    "AutoSwitchWeaponOFF" "關閉狙擊槍快速切槍\n\n\n\n"
+    "FastSniperSwitchON" "開啟狙擊槍快速切槍\n\n\n\n"
+    "FastSniperSwitchOFF" "關閉狙擊槍快速切槍\n\n\n\n"
 
     "WashFrequencySettings" "洗頻設置\n\n\n\n"
     "WashFrequencyDocumentNB" "切換到NB文本\n\n\n\n"
@@ -90,12 +90,15 @@
     "TEAM_T" "【T】\n恐怖分子\n\n\n\n"
     "TEAM_CT" "【CT】\n反恐精英\n\n\n\n"
 
-    "TextOutputSettings" "文字輸出設置\n\n\n\n"
-    "NoTextOutput" "關閉文字輸出\n\n\n\n"
-    "ConsoleOutput" "輸出到控制台\n\n\n\n"
-    "TeamOutput" "輸出到隊伍\n\n\n\n"
-    "GlobalOutput" "輸出給所有人\n\n\n\n"
-    "ViewCurrentConfiguration" "輸出當前CFG設置\n\n\n\n"
+    "SoundAlertON" "開啟聲音提示\n\n\n\n"
+    "SoundAlertOFF" "關閉聲音提示\n\n\n\n"
+
+    "MessageSettings" "輸出設置\n\n\n\n"
+    "MessageOFF" "關閉文字輸出\n\n\n\n"
+    "MessageTeam" "文字輸出到隊伍\n\n\n\n"
+    "MessageALL" "文字輸出給所有人\n\n\n\n"
+    "MessageConsole" "文字輸出到控制台\n\n\n\n"
+    "PrintSettings" "輸出當前CFG設置\n\n\n\n"
     "ClearConsole" "清空控制台\n\n\n\n"
 
     "RunMapMenu" "跑圖選單(未完成)\n\n\n\n"

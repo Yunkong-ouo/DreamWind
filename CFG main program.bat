@@ -19,6 +19,13 @@ cls
 @REM :UACAdmin
 @REM cd /d "%~dp0"
 
+REM 設置要檢查的行
+set "ADDITIONAL_CONTENT=joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt"
+set "EXEC_COMMAND=DreamWind/DWLoad"
+
+REM 設置 autoexec.cfg 文件路徑
+set "AUTOEXEC_FILE=autoexec.cfg"
+
 REM 取得系統語言設置（從註冊表中獲取）
 for /f "tokens=3" %%a in ('reg query "HKCU\Control Panel\International" /v LocaleName') do set SystemLanguage=%%a
 REM 根據系統語言設置 Lang 變數
@@ -336,13 +343,6 @@ cd "%~dp0.."
 
 echo.
 
-REM 設置要檢查的行
-set "ADDITIONAL_CONTENT=joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt"
-set "EXEC_COMMAND=DreamWind/DreamWindMod"
-
-REM 設置 autoexec.cfg 文件路徑
-set "AUTOEXEC_FILE=autoexec.cfg"
-
 REM 檢查 autoexec.cfg 文件是否存在
 if not exist "%AUTOEXEC_FILE%" (
     if "%Lang%"=="TraditionalChinese" (
@@ -457,13 +457,6 @@ for /r "%RESOURCE_DIR%" %%F in (*) do (
 
 cd "%~dp0.."
 
-REM 設置要檢查的行
-set "EXEC_COMMAND=DreamWind/DreamWindMod"
-set "AUTOEXEC_FILE=autoexec.cfg"
-
-REM 設置要新增的內容，將所有命令合併為一行
-set "ADDITIONAL_CONTENT=joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt"
-
 REM 檢查 autoexec.cfg 文件是否存在
 if not exist "%AUTOEXEC_FILE%" (
     if "%Lang%"=="TraditionalChinese" (
@@ -492,10 +485,12 @@ if %errorlevel% neq 0 (
     REM 刪除文件中所有包含 "%ADDITIONAL_CONTENT%" 的行
     findstr /v /i "%ADDITIONAL_CONTENT%" "%AUTOEXEC_FILE%" > "%AUTOEXEC_FILE%.tmp" 2>nul
     move /Y "%AUTOEXEC_FILE%.tmp" "%AUTOEXEC_FILE%" >nul 2>&1
-    @REM echo %ADDITIONAL_CONTENT% >> "%AUTOEXEC_FILE%"
+    REM 如果需要追加內容到文件中，取消註釋以下行：
+    REM echo %ADDITIONAL_CONTENT% >> "%AUTOEXEC_FILE%"
 ) else (
     REM 如果已經存在，則不進行操作
 )
+
 
 echo.
 
