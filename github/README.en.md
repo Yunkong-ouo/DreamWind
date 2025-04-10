@@ -119,7 +119,7 @@ Move all `.txt` files from the `resource` folder into the CS2 `resource` folder.
 Add the following command to the Steam launch options:
 
 ```
-+exec DreamWind/DreamWindMod
++exec DreamWind/DWLoad
 ```
 
 ---
@@ -135,7 +135,7 @@ Create a file named `autoexec.cfg` and place it in the default path:
 Add the following content to the file:
 
 ```
-exec DreamWind/DreamWindMod
+exec DreamWind/DWLoad
 ```
 
 ---

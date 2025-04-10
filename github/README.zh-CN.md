@@ -119,7 +119,7 @@ bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_resp
 在 Steam 启动选项中新增：
 
 ```
-+exec DreamWind/DreamWindMod
++exec DreamWind/DWLoad
 ```
 
 ---
@@ -135,7 +135,7 @@ bind mouse_x yaw;bind mouse_y pitch;unbindall;binddefaults;binddefaults;joy_resp
 文件内容如下：
 
 ```
-exec DreamWind/DreamWindMod
+exec DreamWind/DWLoad
 ```
 
 ---
