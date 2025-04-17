@@ -1,0 +1,32 @@
+# 強制所有檔案使用 LF 行結尾
+*.cfg text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# 強制所有檔案使用 CRLF 行結尾
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.cpp text eol=crlf
+
+# 讓 Git 自動識別其他文本檔案的行結尾格式
+* text=auto
+
+# 強制所有圖片檔案保持原始格式（不要處理行結尾）
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tiff binary
+*.webp binary
+*.svg binary
+
+*.pdf binary
+*.doc binary
+*.docx binary
+*.ppt binary
+*.pptx binary
+*.odt binary
+*.ods binary
+*.rtf binary
+*.xlsx binary
