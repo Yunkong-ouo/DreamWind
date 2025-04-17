@@ -2,6 +2,7 @@
 *.cfg text eol=lf
 *.md text eol=lf
 *.txt text eol=lf
+*.certx text eol=lf
 
 # 強制所有檔案使用 CRLF 行結尾
 *.bat text eol=crlf
@@ -11,7 +12,10 @@
 # 讓 Git 自動識別其他文本檔案的行結尾格式
 * text=auto
 
-# 強制所有圖片檔案保持原始格式（不要處理行結尾）
+# 強制所有檔案保持原始格式（不要處理行結尾）
+*.exe binary
+*.zip binary
+
 *.png binary
 *.jpg binary
 *.jpeg binary
