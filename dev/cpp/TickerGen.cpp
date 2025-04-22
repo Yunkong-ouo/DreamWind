@@ -48,24 +48,24 @@ int main()
         {
             fout << format("sleep {}\n", n / 2 * dur);
         }
-        fout << format("{}_{}_{}_bg\n", ticker_name, idx2, getid());
+        fout << format("{}_{}_{}_begin\n", ticker_name, idx2, getid());
         for (int j = 1; j <= n; j++)
         {
             fout << ot[j & 1] << '\n';
         }
         if (i == m)
         {
-            fout << format("exec {}/{}/dead", ticker_path, file_name);
+            fout << format("exec {}/{}/Dead", ticker_path, file_name);
         }
         fout.close();
     }
 
-    ofstream fout(format("{}/dead.cfg", file_name), ios::out);
+    ofstream fout(format("{}/Dead.cfg", file_name), ios::out);
     fout << format("//will last {:.4f}s ({:.4f}h)\n", (n / 2) / 1000.0 * dur * m, double((n / 2) * dur / 1000.0 / 3600.0 * m));
     fout << format("alias {0}{1} \"echoln Ticker {1} died!\"", idx1, idx2);
     fout.close();
 
-    fout = ofstream(format("{}/loader.cfg", file_name), ios::out);
+    fout = ofstream(format("{}/Init.cfg", file_name), ios::out);
     fout << format("alias {}_{}_clr \"", ticker_name, idx2);
     for (int i = 1; i <= m; i++)
     {
@@ -77,7 +77,7 @@ int main()
                 C = 'a', x -= 10;
             return C + x;
         };
-        fout << format("alias {}{}{} {}", idx1, idx2, getid(), (i == m ? "" : ";"));
+        fout << format("alias {}{}{}{}", idx1, idx2, getid(), (i == m ? "": " ;"));
     }
     fout << "\"\n";
     fout << "\n";
@@ -95,8 +95,6 @@ int main()
         fout << format("alias {0}_{2}_{3}_begin \"{0}_{2}_clr;alias {1}{2}{3} {1}{2}\"\n", ticker_name, idx1, idx2, getid());
     }
     fout << "\n";
-    fout << format("exec {}/{}/reg", ticker_path, file_name) << "\n";
-    fout << "\n";
 
     for (int i = 1; i <= m; i++)
     {
@@ -113,7 +111,7 @@ int main()
 
     fout.close();
 
-    ofstream reg_fout(format("{}/reg.cfg", file_name), ios::out);
+    ofstream reg_fout(format("{}/Reg.cfg", file_name), ios::out);
     reg_fout << format("alias {}{} \"{}_{}\"\n", idx1, idx2, ticker_name, file_name);
     reg_fout << format("alias {}_{} \"\"\n", ticker_name, file_name);
     reg_fout.close();

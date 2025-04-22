@@ -42,7 +42,7 @@ int main()
 
     cout << "us " << ((slp * m) / 1000.0 / 3600.0) << endl;
 
-    ofstream fout(format("{}/init.cfg", file_name), ios::out | ios::binary);
+    ofstream fout(format("{}/Init.cfg", file_name), ios::out | ios::binary);
 
     fout << format("alias {}_{}_clr \"", ticker_name, file_name);
     for (int i = 0; i < m; i++)
@@ -65,7 +65,7 @@ int main()
 
     fout.close();
 
-    ofstream reg_fout(format("{}/reg.cfg", file_name), ios::out);
+    ofstream reg_fout(format("{}/Reg.cfg", file_name), ios::out);
     reg_fout << format("alias $ \"{}_1FPS\"\n", ticker_name);
     reg_fout << format("alias {}_1FPS \"\"\n", ticker_name);
     reg_fout.close();
