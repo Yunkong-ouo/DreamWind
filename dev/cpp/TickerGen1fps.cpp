@@ -47,7 +47,7 @@ int main()
     fout << format("alias {}_{}_clr \"", ticker_name, file_name);
     for (int i = 0; i < m; i++)
     {
-        fout << format("alias {}; ", us[i]);
+        fout << format("alias {} ;", us[i]);
     }
     fout << "\"\n";
 
