@@ -6,18 +6,6 @@ mode con: cols=80 lines=25
 color 0a
 cls
 
-@REM 確認是否有管理員權限
-@REM bcdedit >nul
-@REM if '%errorlevel%' NEQ '0' (
-@REM     goto UACPrompt
-@REM ) else (
-@REM     goto UACAdmin
-@REM )
-@REM :UACPrompt
-@REM %1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
-@REM exit /B
-@REM :UACAdmin
-@REM cd /d "%~dp0"
 
 REM 設置要檢查的行
 set "ADDITIONAL_CONTENT=joy_response_move 1;joy_side_sensitivity 1.000000;joy_forward_sensitivity 1.000000;cl_scoreboard_mouse_enable_binding +attack2;cl_quickinventory_filename radial_quickinventory.txt"
@@ -25,6 +13,7 @@ set "EXEC_COMMAND=DreamWind/DWLoad"
 
 REM 設置 autoexec.cfg 文件路徑
 set "AUTOEXEC_FILE=autoexec.cfg"
+
 
 REM 取得系統語言設置（從註冊表中獲取）
 for /f "tokens=3" %%a in ('reg query "HKCU\Control Panel\International" /v LocaleName') do set SystemLanguage=%%a
@@ -81,22 +70,6 @@ if "%Lang%"=="TraditionalChinese" (
 )
 goto MainMenu
 
-:ErrorGeneral
-color 0c
-mode con: COLS=50 LINES=5
-cls
-if "%Lang%"=="TraditionalChinese" (
-    set Msg_ErrorGeneral=操作失敗，按下任意鍵返回主選單
-) else if "%Lang%"=="SimplifiedChinese" (
-    set Msg_ErrorGeneral=操作失败，按下任意键返回主菜单
-) else (
-    set Msg_ErrorGeneral=Operation failed, press any key to return to the main menu
-)
-echo.
-echo %Msg_ErrorGeneral%
-pause >nul
-goto MainMenu
-
 
 :PauseGeneral
 if "%Lang%"=="TraditionalChinese" (
@@ -109,6 +82,7 @@ if "%Lang%"=="TraditionalChinese" (
 echo %Msg_PauseGeneral%
 pause >nul
 exit /b
+
 
 :examine
 color 0a
@@ -179,6 +153,7 @@ if /I "%CURRENT_FOLDER_NAME%" neq "%EXPECTED_FOLDER_NAME%" (
 )
 goto !returnTo!
 
+
 :MainMenu
 mode con: cols=40 lines=15
 color 0a
@@ -223,6 +198,7 @@ if "%Lang%"=="TraditionalChinese" (
     echo.
     goto PauseGeneral
 )
+
 
 @REM settings============================================================
 
@@ -421,6 +397,7 @@ if "%Lang%"=="TraditionalChinese" (
 )
 @REM ============================================================
 
+
 @REM Uninstall============================================================
 :UninstallVerify
 cls
@@ -491,7 +468,6 @@ if %errorlevel% neq 0 (
     REM 如果已經存在，則不進行操作
 )
 
-
 echo.
 
 if "%Lang%"=="TraditionalChinese" (
@@ -508,6 +484,7 @@ if "%Lang%"=="TraditionalChinese" (
     goto PauseGeneral
 )
 @REM ============================================================
+
 
 @REM FOVCalculator============================================================
 :FOVCalculatorVerify
@@ -571,4 +548,17 @@ echo 计算结果: %result%
 echo.
 echo 双击两下数字可以选中并用 ctrl+c 复制
 echo.
-goto PauseGeneral
+if "%Lang%"=="TraditionalChinese" (
+    echo 計算完成返回主目錄。
+	pause >nul
+    goto MainMenu
+) else if "%Lang%"=="SimplifiedChinese" (
+    echo 计算完成返回主目录。
+	pause >nul
+    goto MainMenu
+) else (
+    echo Calculation completed Return to main directory.
+	pause >nul
+    goto MainMenu
+)
+@REM ============================================================
