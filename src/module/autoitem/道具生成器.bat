@@ -38,7 +38,7 @@ set m_yaw_pitchvalue=0.022
 
 @REM 計算
 
-for /f %%i in ('powershell -command "[math]::round((!pitchvalue! / (!sensitivityvalue! * !m_yaw_pitchvalue!)), 6)"') do set resultPitch=%%i
+for /f %%i in ('powershell -command "[math]::Round((!pitchvalue! - 89.0) / (!sensitivityvalue! * !m_yaw_pitchvalue!), 6)"') do set resultPitch=%%i
 for /f %%i in ('powershell -command "[math]::round((-1 * (!yawvalue! / (!sensitivityvalue! * !m_yaw_pitchvalue!))), 6)"') do set resultYaw=%%i
 
 echo.
