@@ -2,16 +2,19 @@
 chcp 65001 >nul
 setlocal enabledelayedexpansion
 
+start "" "%~dp0copy.bat"
+choice /t 1 /d y /n >nul
+
 @REM 設定版本與名稱
-set version=v1.3.1
+set version=v1.3.2
 set name=DreamWind
 set namefile=DreamWind
 
 @REM 記錄檔
-set namelog=compress_log.txt
+@REM set namelog=compress_log.txt
 
 @REM 7-Zip 可執行檔路徑
-set ZIP_PATH="P:\Program Files\7-Zip\7z.exe"
+set ZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 
 @REM 壓縮目標
 set SOURCE_FOLDER="%CD%\%namefile%"
@@ -24,7 +27,7 @@ if exist %ZIP_NAME% (
     echo.
     @REM echo [！] 發現舊的壓縮檔跟記錄檔，刪除中...
     del /F /Q %ZIP_NAME%
-    del /F /Q %namelog%
+@REM     del /F /Q %namelog%
 )
 
 echo.
@@ -49,10 +52,10 @@ echo ==========================================
 echo [✔] 壓縮完成！檔案已存於：
 echo %ZIP_NAME%
 echo 壓縮後大小：!size! 位元組 (!size:~0,-3! KB, !sizeMB!.!sizeMB_dec! MB)
-echo 詳細記錄請查看 compress_log.txt
+@REM echo 詳細記錄請查看 compress_log.txt
 echo ==========================================
 
 echo.
 echo 請按任意鍵退出...
 pause >nul
-exit /b
+exit
