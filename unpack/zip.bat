@@ -4,13 +4,13 @@ setlocal enabledelayedexpansion
 
 REM -----------------------------
 REM 設定版本與名稱
-set "version=v1.3.2"
-set "name=DreamWind"
-set "namefile=DreamWind"
+set version=v1.3.2
+set name=DreamWind
+set namefile=DreamWind
 
 REM 壓縮來源資料夾與輸出檔案
-set "SOURCE_FOLDER=%~dp0%namefile%"
-set "ZIP_NAME=%~dp0%name%_%version%.zip"
+set SOURCE_FOLDER=%~dp0%namefile%
+set ZIP_NAME=%~dp0%name%_%version%.zip
 
 REM 刪除舊的壓縮檔
 if exist "%ZIP_NAME%" (
